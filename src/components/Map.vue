@@ -13,7 +13,7 @@
         >
             <ymap-marker v-for='marker in markers'
                          :callbacks="{ click(){myExec(marker)} }"
-                         
+
                          :marker-id="marker.id"
                          marker-type="placemark"
                          :coords="marker.coords"
@@ -47,13 +47,7 @@
         computed: {
             ...mapState({
                 markers: state => state.markers
-            }),
-            balloonTemplate() {
-
-                return `
-
-              `
-            }
+            })
         },
         mounted() {
 

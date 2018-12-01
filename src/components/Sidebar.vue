@@ -1,24 +1,26 @@
 <template lang="html">
   <div class="container">
 
-    <div v-if='selected'>
-      <button  class="btn btn-action s-circle"
-        @click='$store.commit("selectOff")'><i class="icon icon-cross"></i></button>
-        <h3>{{ obj.name }}</h3>
-        <div class="adress">
-          Адрес: {{ obj.adress }}
+      <div v-if='selected'>
+        <button  class="btn btn-action s-circle"
+          @click='$store.commit("selectOff")'><i class="icon icon-cross"></i></button>
+          <h3>{{ obj.name }}</h3>
+          <div class="adress">
+            Адрес: {{ obj.adress }}
+          </div>
+          <div class="cost">
+            Стоимость: {{ obj.cost }}
+          </div>
         </div>
-        <div class="cost">
-          Стоимость: {{ obj.cost }}
-        </div>
-      </div>
 
-    <div v-else>
-      <div v-for='obj in markers'
-           @click='markerSelect(obj)'>
-          {{ obj.name }}
-      </div>
-    </div>
+      <ul v-else class='menu'>
+        <li v-for='obj in markers' class='menu-item'
+             @click='markerSelect(obj)'>
+             <a href="#">{{ obj.name }}</a>
+
+        </li>
+      </ul>
+
     </div>
 </template>
 
@@ -45,7 +47,8 @@ export default {
   },
   methods: {
     markerSelect(el) {
-      this.obj = { ...el};
+      this.obj = { ...el
+      };
       this.$store.commit("selectOn");
     }
   },
@@ -65,7 +68,7 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-    width: 200px;
+
     height: 500px;
 }
 </style>

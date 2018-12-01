@@ -1,7 +1,7 @@
 <template>
-  <div class="home">
-    <Map class='map'></Map>
-    <Sidebar></Sidebar>
+  <div class="home columns">
+    <Map class='map column col-9'></Map>
+    <Sidebar class='column col-3'></Sidebar>
   </div>
 </template>
 
@@ -19,10 +19,5 @@ export default {
 }
 </script>
 <style lang='scss'>
-  .home{
-    display: flex;
-  }
-  .map{
-    width: 100%;
-  }
+
 </style>
