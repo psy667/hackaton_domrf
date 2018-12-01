@@ -1,8 +1,8 @@
 # hackaton_domrf
-<<<<<<< HEAD
+
 # edit by psy667
-=======
 # hackaton_domrf
+## hello world
 # hackaton_domrf
 # hackaton_domrf
 # hackaton_domrf
