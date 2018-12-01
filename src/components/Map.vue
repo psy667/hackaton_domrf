@@ -35,6 +35,7 @@
     import Vue from 'vue'
     import YmapPlugin from 'vue-yandex-maps'
     import {mapState} from 'vuex'
+    import {bus} from "../bus";
 
     Vue.use(YmapPlugin);
 
@@ -74,10 +75,10 @@
         },
         methods:{
             markerSelect(){
-              console.log(':)');
+              window.console.log(':)');
             },
             myExec(el){
-              console.log(el);
+              bus.$emit("markerSelect", el);
             }
 
         }
