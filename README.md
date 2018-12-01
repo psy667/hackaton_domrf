@@ -1,9 +1,29 @@
-# hackaton_domrf
+# hakaton-1
 
-# edit by psy667
-# hackaton_domrf
-## hello world
-# hackaton_domrf
-# hackaton_domrf
-# hackaton_domrf
->>>>>>> 06f54b69573310a8e4fa0f8f4692cd6190760aaf
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your tests
+```
+npm run test
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
