@@ -13,12 +13,12 @@
         >
             <ymap-marker v-for='marker in markers'
                          :callbacks="{ click(){myExec(marker)} }"
-                         :balloonTemplate="balloonTemplate"
+                         
                          :marker-id="marker.id"
                          marker-type="placemark"
                          :coords="marker.coords"
                          :hint-content="marker.name"
-                         :balloon="{header: marker.name, body: marker.cost, footer: marker.adress}"
+
                          :icon="{color: 'green', glyph: 'cinema'}"
                          cluster-name="1"
                          :key="marker.id"
@@ -51,10 +51,8 @@
             balloonTemplate() {
 
                 return `
-              <h1 class="red">Hi, everyone!</h1>
-              <p>I am here: ${this.placemarks}</p>
-              <img src="http://via.placeholder.com/350x140">
-            `
+
+              `
             }
         },
         mounted() {

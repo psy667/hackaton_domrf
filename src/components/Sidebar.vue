@@ -1,6 +1,9 @@
 <template lang="html">
   <div class="container">
+
     <div v-if='selected'>
+      <button  class="btn btn-action s-circle"
+        @click='$store.commit("selectOff")'><i class="icon icon-cross"></i></button>
         <h3>{{ obj.name }}</h3>
         <div class="adress">
           Адрес: {{ obj.adress }}
@@ -11,7 +14,8 @@
       </div>
 
     <div v-else>
-      <div v-for='obj in markers'>
+      <div v-for='obj in markers'
+           @click='markerSelect(obj)'>
           {{ obj.name }}
       </div>
     </div>
@@ -19,13 +23,17 @@
 </template>
 
 <script>
-import {mapState} from 'vuex'
+import {
+  mapState
+} from 'vuex'
 
-  import {bus} from '../bus'
+import {
+  bus
+} from '../bus'
 
 export default {
   name: "Sidebar",
-  data(){
+  data() {
     return {
       obj: {
         name: '',
@@ -35,24 +43,29 @@ export default {
       }
     };
   },
-    mounted(){
-      bus.$on("markerSelect", (el)=>{
-          this.obj={...el};
-          this.$store.commit("selectOn");
-      });
-    },
-    computed: {
-      ...mapState({
-        markers: state => state.markers,
-        selected: state => state.selected
-      })
+  methods: {
+    markerSelect(el) {
+      this.obj = { ...el};
+      this.$store.commit("selectOn");
     }
+  },
+  mounted() {
+    bus.$on("markerSelect", (el) => {
+      this.markerSelect(el)
+    });
+  },
+  computed: {
+    ...mapState({
+      markers: state => state.markers,
+      selected: state => state.selected
+    })
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-  .container{
+.container {
     width: 200px;
     height: 500px;
-  }
+}
 </style>
