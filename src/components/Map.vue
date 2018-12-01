@@ -7,22 +7,20 @@
                 :cluster-options="{
                   1: {clusterDisableClickZoom: false}
                 }"
-                :placemarks="placemarks"
                 :behaviors="['default']"
                 :controls="['searchControl', 'typeSelector']"
                 map-type="map"
         >
-            <ymap-marker v-for='(marker, index) in markers'
-                    :callbacks="{ click(){myExec(marker)} }"
-
-                    :balloonTemplate = "balloonTemplate"
-                    :marker-id="marker.id"
+            <ymap-marker v-for='marker in markers'
+                         :callbacks="{ click(){myExec(marker)} }"
+                         :balloonTemplate="balloonTemplate"
+                         :marker-id="marker.id"
                          marker-type="placemark"
-                    :coords="marker.coords"
-                    :hint-content="marker.name"
-                    :balloon="{header: marker.name, body: marker.cost, footer: marker.adress}"
-                    :icon="{color: 'green', glyph: 'cinema'}"
-                    cluster-name="1"
+                         :coords="marker.coords"
+                         :hint-content="marker.name"
+                         :balloon="{header: marker.name, body: marker.cost, footer: marker.adress}"
+                         :icon="{color: 'green', glyph: 'cinema'}"
+                         cluster-name="1"
                          :key="marker.id"
             ></ymap-marker>
 
@@ -41,44 +39,30 @@
 
     export default {
         name: "Map",
-        data(){
-            return{
-                placemarks: [
-                    {
-                        coords: [54.8, 39.8],
-                        properties: {}, // define properties here
-                        options: {
+        data() {
+            return {
 
-                        }, // define options here
-                        clusterName: "1",
-                        balloonTemplate: '<div>"Your custom template"</div>',
-                        callbacks: { click: this.markerSelect() }
-                    }
-                ]
             }
         },
         computed: {
-          ...mapState({
-            markers: state => state.markers
-          }),
-          balloonTemplate() {
+            ...mapState({
+                markers: state => state.markers
+            }),
+            balloonTemplate() {
 
-            return `
+                return `
               <h1 class="red">Hi, everyone!</h1>
               <p>I am here: ${this.placemarks}</p>
               <img src="http://via.placeholder.com/350x140">
             `
-          }
+            }
         },
-        mounted(){
-            window.console.log(YmapPlugin.Events);
+        mounted() {
+
         },
-        methods:{
-            markerSelect(){
-              window.console.log(':)');
-            },
-            myExec(el){
-              bus.$emit("markerSelect", el);
+        methods: {
+            myExec(el) {
+                bus.$emit("markerSelect", el);
             }
 
         }

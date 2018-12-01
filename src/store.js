@@ -44,6 +44,13 @@ export default new Vuex.Store({
             },
         ]
     },
-    mutations: {},
+    mutations: {
+        selectOff(state) {
+            state.selected=false;
+        },
+        selectOn(state) {
+            state.selected=true;
+        }
+    },
     actions: {}
 })

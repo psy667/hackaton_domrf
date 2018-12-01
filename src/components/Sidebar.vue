@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="container">
-    <div v-if='objSelected'>
+    <div v-if='selected'>
         <h3>{{ obj.name }}</h3>
         <div class="adress">
           Адрес: {{ obj.adress }}
@@ -36,8 +36,9 @@ export default {
     };
   },
     mounted(){
-      bus.$on("markerSelect", (id)=>{
-
+      bus.$on("markerSelect", (el)=>{
+          this.obj={...el};
+          this.$store.commit("selectOn");
       });
     },
     computed: {
