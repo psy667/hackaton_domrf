@@ -10,9 +10,44 @@ export default new Vuex.Store({
             {
                 id: 1,
                 name: 'дом 1',
-                adress: 'Барнаул, проспект Комсомольский,д 122А',
+                city:"Барнаул",
+                adress: 'Проспект Комсомольский,д 122А',
                 coords: [53.356673,83.780332],
-                cost: 100
+                apartaments:[
+                    {
+                        type:"Однокомнатные",
+                        count:4,
+                        cost:16253,
+                        square:40
+                    },
+                    {
+                        type:"Двухкомнатные",
+                        count:4,
+                        cost:16253,
+                        square:40
+                    },
+                    {
+                        type:"Трехкомнатные",
+                        count:4,
+                        cost:16253,
+                        square:40
+                    },
+                    {
+                        type:"Четырехкомнатные",
+                        count:4,
+                        cost:16253,
+                        square:40
+                    },
+
+                ],
+                underground:false,
+                school:false,
+                kindergarten:false,
+                parking:false,
+                dateSettlement:{
+                    quarter:3,
+                    year:2019
+                }
             },
             {
                 id: 2,

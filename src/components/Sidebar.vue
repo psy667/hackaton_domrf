@@ -1,74 +1,75 @@
 <template lang="html">
-  <div class="container">
+    <div class="container">
 
-      <div v-if='selected'>
-        <button  class="btn btn-action s-circle"
-          @click='$store.commit("selectOff")'><i class="icon icon-cross"></i></button>
-          <h3>{{ obj.name }}</h3>
-          <div class="adress">
-            Адрес: {{ obj.adress }}
-          </div>
-          <div class="cost">
-            Стоимость: {{ obj.cost }}
-          </div>
+        <Sort></Sort>
+        <div v-if='selected'>
+            <button class="btn btn-action s-circle"
+                    @click='$store.commit("selectOff")'><i class="icon icon-cross"></i></button>
+            <h3>{{ obj.name }}</h3>
+            <div class="adress">
+                Адрес: {{ obj.adress }}
+            </div>
+            <div class="cost">
+                Стоимость: {{ obj.cost }}
+            </div>
         </div>
 
-      <ul v-else class='menu'>
-        <li v-for='obj in markers' class='menu-item'
-             @click='markerSelect(obj)'>
-             <a href="#">{{ obj.name }}</a>
+        <!--<ul v-else class='menu'>-->
+        <!--<li v-for='obj in markers' class='menu-item'-->
+        <!--@click='markerSelect(obj)'>-->
+        <!--<a href="#">{{ obj.name }}</a>-->
 
-        </li>
-      </ul>
+        <!--</li>-->
+        <!--</ul>-->
 
     </div>
 </template>
 
 <script>
-import {
-  mapState
-} from 'vuex'
+    import {mapState} from 'vuex'
+    import {bus} from '../other_files/bus'
+    import Sort from './Sort'
 
-import {
-  bus
-} from '../bus'
-
-export default {
-  name: "Sidebar",
-  data() {
-    return {
-      obj: {
-        name: '',
-        adress: '',
-        coords: '',
-        cost: ''
-      }
-    };
-  },
-  methods: {
-    markerSelect(el) {
-      this.obj = { ...el
-      };
-      this.$store.commit("selectOn");
+    export default {
+        name: "Sidebar",
+        data() {
+            return {
+                obj: {
+                    name: '',
+                    adress: '',
+                    coords: '',
+                    cost: ''
+                }
+            };
+        },
+        methods: {
+            markerSelect(el) {
+                this.obj = {
+                    ...el
+                };
+                this.$store.commit("selectOn");
+            }
+        },
+        mounted() {
+            bus.$on("markerSelect", (el) => {
+                this.markerSelect(el)
+            });
+        },
+        computed: {
+            ...mapState({
+                markers: state => state.markers,
+                selected: state => state.selected
+            })
+        },
+        components:{
+            Sort
+        }
     }
-  },
-  mounted() {
-    bus.$on("markerSelect", (el) => {
-      this.markerSelect(el)
-    });
-  },
-  computed: {
-    ...mapState({
-      markers: state => state.markers,
-      selected: state => state.selected
-    })
-  }
-}
 </script>
 
 <style lang="scss" scoped>
-.container {
+    .container {
 
-    height: 500px;
-}
+        height: 500px;
+    }
 </style>

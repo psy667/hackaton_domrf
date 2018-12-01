@@ -12,7 +12,7 @@
                 map-type="map"
         >
             <ymap-marker v-for='marker in markers'
-                         :callbacks="{ click(){myExec(marker)} }"
+                         :callbacks="{ click(){markerSelect(marker)} }"
 
                          :marker-id="marker.id"
                          marker-type="placemark"
@@ -33,7 +33,7 @@
     import Vue from 'vue'
     import YmapPlugin from 'vue-yandex-maps'
     import {mapState} from 'vuex'
-    import {bus} from "../bus";
+    import {bus} from "../other_files/bus";
 
     Vue.use(YmapPlugin);
 
@@ -53,7 +53,7 @@
 
         },
         methods: {
-            myExec(el) {
+            markerSelect(el) {
                 bus.$emit("markerSelect", el);
             }
 
