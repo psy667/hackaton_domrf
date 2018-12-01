@@ -5,6 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
     state: {
+        selected: false,
         markers: [
             {
                 id: 1,

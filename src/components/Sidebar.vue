@@ -1,16 +1,26 @@
 <template lang="html">
   <div class="container">
-    <h3>{{ obj.name }}</h3>
-    <div class="adress">
-      Адрес: {{ obj.adress }}
+    <div v-if='objSelected'>
+        <h3>{{ obj.name }}</h3>
+        <div class="adress">
+          Адрес: {{ obj.adress }}
+        </div>
+        <div class="cost">
+          Стоимость: {{ obj.cost }}
+        </div>
+      </div>
+
+    <div v-else>
+      <div v-for='obj in markers'>
+          {{ obj.name }}
+      </div>
     </div>
-    <div class="cost">
-      Стоимость: {{ obj.cost }}
     </div>
-  </div>
 </template>
 
 <script>
+import {mapState} from 'vuex'
+
   import {bus} from '../bus'
 
 export default {
@@ -29,6 +39,12 @@ export default {
       bus.$on("markerSelect", (id)=>{
 
       });
+    },
+    computed: {
+      ...mapState({
+        markers: state => state.markers,
+        selected: state => state.selected
+      })
     }
 }
 </script>
