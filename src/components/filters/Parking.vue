@@ -17,7 +17,7 @@
         },
         methods:{
             changeParking(){
-                this.$store.commit("changeParking", this.parking);
+                this.$store.commit("addFilter", {parking:this.parking});
             }
         }
     }

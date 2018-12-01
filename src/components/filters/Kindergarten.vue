@@ -1,7 +1,7 @@
 <template>
     <div>
         <label class="form-checkbox">
-            <input type="checkbox">
+            <input v-model="kindergarten" @change="changeKindergarten" type="checkbox">
             <i class="form-icon"></i> Детский сад
         </label>
     </div>
@@ -9,7 +9,18 @@
 
 <script>
     export default {
-        name: "Kindergarten"
+        name: "Kindergarten",
+        data(){
+            return{
+                kindergarten:false
+            }
+        },
+        methods:{
+            changeKindergarten(){
+                this.$store.commit("addFilter", {kindergarten:this.kindergarten})
+            }
+        }
+
     }
 </script>
 
