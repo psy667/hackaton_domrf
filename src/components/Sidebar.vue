@@ -11,6 +11,8 @@
 </template>
 
 <script>
+  import {bus} from '../bus'
+
 export default {
   name: "Sidebar",
   data(){
@@ -22,7 +24,12 @@ export default {
         cost: ''
       }
     };
-  }
+  },
+    mounted(){
+      bus.$on("markerSelect", (id)=>{
+
+      });
+    }
 }
 </script>
 
