@@ -1,19 +1,21 @@
 <template>
     <div>
         <yandex-map
-                :coords="[54.62896654088406, 39.731893822753904]"
-                zoom="5"
+                :coords="[51.703246,39.179851]"
+                zoom="10"
                 style="width: 100%; height: 600px;"
                 :cluster-options="{
-    1: {clusterDisableClickZoom: false}
-  }"
+                  1: {clusterDisableClickZoom: false}
+                }"
                 :placemarks="placemarks"
                 :behaviors="['default']"
                 :controls="['searchControl', 'typeSelector']"
                 map-type="map"
         >
-            <ymap-marker v-for='marker in markers'
-                         @click="markerSelect"
+            <ymap-marker v-for='(marker, index) in markers'
+                    :callbacks="{ click(){myExec(marker)} }"
+
+                    :balloonTemplate = "balloonTemplate"
                     :marker-id="marker.id"
                          marker-type="placemark"
                     :coords="marker.coords"
@@ -54,16 +56,30 @@
                 ]
             }
         },
-        computed: mapState({
+        computed: {
+          ...mapState({
             markers: state => state.markers
-        }),
+          }),
+          balloonTemplate() {
+
+            return `
+              <h1 class="red">Hi, everyone!</h1>
+              <p>I am here: ${this.placemarks}</p>
+              <img src="http://via.placeholder.com/350x140">
+            `
+          }
+        },
         mounted(){
             window.console.log(YmapPlugin.Events);
         },
         methods:{
             markerSelect(){
-                window.console.log("!");
+              console.log(':)');
+            },
+            myExec(el){
+              console.log(el);
             }
+
         }
     }
 </script>
