@@ -1,7 +1,7 @@
 <template>
   <div class="home columns">
-    <Map class='map column col-9'></Map>
-    <Sidebar class='column col-3'></Sidebar>
+    <Map class='map column col-8'></Map>
+    <Sidebar class='column col-4'></Sidebar>
   </div>
 </template>
 
