@@ -9,18 +9,17 @@
   }"
                 :behaviors="['default']"
                 :controls="['searchControl', 'typeSelector']"
-                :placemarks="placemarks"
                 map-type="map"
-                @map-was-initialized="initHandler"
         >
             <ymap-marker v-for='marker in markers'
-                    marker-id="marker.id"
-                    marker-type="placemark"
+                    :marker-id="marker.id"
+                         :marker-type="marker.type"
                     :coords="marker.coords"
-                    hint-content="Hint content 1"
+                    :hint-content="marker.content"
                     :balloon="{header: 'header', body: 'body', footer: 'footer'}"
                     :icon="{color: 'green', glyph: 'cinema'}"
                     cluster-name="1"
+                         :key="marker.id"
             ></ymap-marker>
 
 
@@ -31,6 +30,7 @@
 <script>
     import Vue from 'vue'
     import YmapPlugin from 'vue-yandex-maps'
+    import {mapState} from 'vuex'
 
     Vue.use(YmapPlugin);
 
@@ -38,18 +38,12 @@
         name: "Map",
         data(){
             return{
-                placemarks: [
-                    {
-                        coords: [54.8, 39.8],
-                        properties: {}, // define properties here
-                        options: {}, // define options here
-                        clusterName: "1",
-                        balloonTemplate: '<div>"Your custom template"</div>',
-                        callbacks: { click: function() {} }
-                    }
-                ]
+
             }
         },
+        computed: mapState({
+            markers: state => state.markers
+        }),
         methods:{
 
         }
