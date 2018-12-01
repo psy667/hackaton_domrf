@@ -9,6 +9,7 @@
         <school></school>
         <square></square>
         <underground></underground>
+        <button @click="filterOut">Фильтровать</button>
     </div>
 </template>
 
@@ -25,6 +26,16 @@
 
     export default {
         name: "Sort",
+        data(){
+          return{
+
+          }
+        },
+        methods:{
+          filterOut(){
+              this.$store.commit("filterOut");
+          }
+        },
         components:{
             Apartaments,
             City,

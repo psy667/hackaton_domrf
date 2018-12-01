@@ -1,13 +1,24 @@
 <template>
     <div>
         <label class="form-label" for="city-input">Город</label>
-        <input class="form-input" type="text" id="city-input" placeholder="Город">
+        <input @change="changeCity" class="form-input" type="text" id="city-input" v-model="city" placeholder="Город">
     </div>
 </template>
 
 <script>
     export default {
-        name: "city"
+        name: "city",
+        data(){
+            return{
+                city:""
+            }
+        },
+        methods:{
+            changeCity(){
+                // this.$store.commit("changeCity",this.city)
+                this.$store.commit("addFilter", {city:this.city});
+            }
+        }
     }
 </script>
 

@@ -48,7 +48,7 @@
                 this.obj = {
                     ...el
                 };
-                console.log(this.obj.apartaments[0].cost);
+                window.console.log(this.obj.apartaments[0].cost);
                 this.$store.commit("selectOn");
             }
         },

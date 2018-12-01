@@ -1,9 +1,13 @@
 <template>
     <div>
-        <label class="form-checkbox">
-            <input type="checkbox">
-            <i class="form-icon"></i> Студии
-        </label>
+        <select class="form-select">
+            <option>Любой год</option>
+            <option>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+            <option>2023</option>
+            <option>2024</option>
+        </select>
     </div>
 </template>
 

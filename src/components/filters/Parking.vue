@@ -1,7 +1,7 @@
 <template>
     <div>
         <label class="form-checkbox">
-            <input type="checkbox">
+            <input type="checkbox" @change="changeParking" v-model="parking">
             <i class="form-icon"></i> Парковка
         </label>
     </div>
@@ -9,7 +9,17 @@
 
 <script>
     export default {
-        name: "Parking"
+        name: "Parking",
+        data(){
+            return{
+                parking:false
+            }
+        },
+        methods:{
+            changeParking(){
+                this.$store.commit("changeParking", this.parking);
+            }
+        }
     }
 </script>
 

@@ -8,6 +8,7 @@ export default new Vuex.Store({
         selected: false,
         markers: [{
             "id": 1,
+            visible:true,
             "name": "дом 76",
             "city": "Барнаул",
             "adress": "Проспект Комсомольский,д 122А",
@@ -56,6 +57,7 @@ export default new Vuex.Store({
         },
         {
             "id": 2,
+            visible:true,
             "name": "дом 2",
             "city": "Воронеж",
             "adress": "Московский проспект,д 91",
@@ -104,6 +106,7 @@ export default new Vuex.Store({
         },
         {
             "id": 3,
+            visible:true,
             "name": "дом 3",
             "city": "Воронеж",
             "adress": "ул Антонова-Овсеенко,д 19",
@@ -152,6 +155,7 @@ export default new Vuex.Store({
         },
         {
             "id": 4,
+            visible:true,
             "name": "дом 4",
             "city": "Воронеж",
             "adress": "ул Новосибирская,д 61А",
@@ -200,6 +204,7 @@ export default new Vuex.Store({
         },
         {
             "id": 5,
+            visible:true,
             "name": "дом 5",
             "city": "Липецк",
             "adress": "ул Москаленко,д 1",
@@ -244,7 +249,11 @@ export default new Vuex.Store({
                 "quarter": 1,
                 "year": 2019
             }
-        }]
+        }],
+        filter:{
+            city:"",
+            school:false
+        }
     },
     mutations: {
         selectOff(state) {
@@ -252,7 +261,28 @@ export default new Vuex.Store({
         },
         selectOn(state) {
             state.selected=true;
-        }
+        },
+        addFilter(state, option){
+            state.filter={...state.filter, ...option};
+        },
+        // filterOut(state){
+        //
+        // }
+        // changeBasic(state, option){
+        //     state.markers.filter(marker => (marker[option] === option) ? marker.visible=true : marker.visible=false);
+        // },
+        // changeParking(state, parking){
+        //     state.markers.filter(marker => (marker.parking === parking) ? marker.visible=true : marker.visible=false);
+        // },
+        // changeSchool(state, school){
+        //     state.markers.filter(marker => (marker.school === school) ? marker.visible=true : marker.visible=false);
+        // },
+        // changeKindergarten(state, kindergarten){
+        //     state.markers.filter(marker => (marker.kindergarten === kindergarten) ? marker.visible=true : marker.visible=false);
+        // },
+        // changeMetro(state, metro){
+        //     state.markers.filter(marker => (marker.metro === metro) ? marker.visible=true : marker.visible=false);
+        // }
     },
     actions: {}
 })

@@ -13,12 +13,12 @@
         >
             <ymap-marker v-for='marker in markers'
                          :callbacks="{ click(){markerSelect(marker)} }"
-
+                         :v-show="marker.visible"
                          :marker-id="marker.id"
                          marker-type="placemark"
                          :coords="marker.coords"
                          :hint-content="marker.name"
-
+                         :options="{opacity:0}"
                          :icon="{color: 'green', glyph: 'cinema'}"
                          cluster-name="1"
                          :key="marker.id"
