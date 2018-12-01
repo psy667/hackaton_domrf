@@ -43,7 +43,7 @@
   }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .card{
     display: flex;
     flex-direction: row;
@@ -51,15 +51,14 @@
 
     max-width: 960px;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 3px 20px -5px #0003;
     .card-image{
-      width: 30%;
-      // min-height: 200px;
+      width: 20%;
     }
     .card-body{
-      width: 70%;
+      width: 80%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;

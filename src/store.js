@@ -12,11 +12,11 @@ export default new Vuex.Store({
             "city": "Барнаул",
             "adress": "Проспект Комсомольский,д 122А",
             "coords": [ 53.356673, 83.780332 ],
-            apartaments: [
+            "apartaments": [
                 {
                     "type": "Студия",
                     "count": 8,
-                    cost: 800000,
+                    "cost": 800000,
                     "square": 35
                 },
                 {
