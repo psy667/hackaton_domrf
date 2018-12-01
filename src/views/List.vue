@@ -9,7 +9,7 @@
       <div class="card-body">
         <div class="block">
           <div class="card-title h3">{{ obj.name }}</div>
-          <div class="card-title h4">{{ obj.cost }} руб.</div>
+          <div class="card-title h4">Стоимость: от {{ obj.apartaments[0].cost }} руб.</div>
         </div>
         <div class="block">
           <div class="text-gray">{{ obj.adress }}</div>

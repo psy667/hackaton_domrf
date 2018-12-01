@@ -1,7 +1,7 @@
 <template lang="html">
     <div class="container">
 
-        <Sort></Sort>
+
         <div v-if='selected'>
             <button class="btn btn-action s-circle"
                     @click='$store.commit("selectOff")'><i class="icon icon-cross"></i></button>
@@ -10,10 +10,10 @@
                 Адрес: {{ obj.adress }}
             </div>
             <div class="cost">
-                Стоимость: {{ obj.cost }}
+                Стоимость: от {{ obj.apartaments[0].cost }}
             </div>
         </div>
-
+        <Sort v-else></Sort>
         <!--<ul v-else class='menu'>-->
         <!--<li v-for='obj in markers' class='menu-item'-->
         <!--@click='markerSelect(obj)'>-->
@@ -44,9 +44,11 @@
         },
         methods: {
             markerSelect(el) {
+
                 this.obj = {
                     ...el
                 };
+                console.log(this.obj.apartaments[0].cost);
                 this.$store.commit("selectOn");
             }
         },
