@@ -19,7 +19,7 @@
                          :coords="marker.coords"
                          :hint-content="marker.name"
                          :options="{opacity:0}"
-                         :icon="{color: 'green', glyph: 'cinema'}"
+                         :icon="{color: 'green', glyph: 'home'}"
                          cluster-name="1"
                          :key="marker.id"
             ></ymap-marker>
