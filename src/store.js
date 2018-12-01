@@ -6,6 +6,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
     state: {
         selected: false,
+        map: true,
         markers: [{
             id: 1,
             visible:true,
@@ -251,9 +252,11 @@ export default new Vuex.Store({
             }
         }],
         filter:{
-            city:"",
-            school:false
-        }
+            school:false,
+            underground: false,
+            city:""
+        },
+        filtered: []
     },
     mutations: {
         selectOff(state) {
@@ -265,9 +268,33 @@ export default new Vuex.Store({
         addFilter(state, option){
             state.filter={...state.filter, ...option};
         },
-        // filterOut(state){
-        //
-        // }
+        filterOut(state){
+          state.map = false;
+          state.filtered = state.markers;
+
+          for (let key in state.filter) {
+            if (state.filter[key]) {
+              let context = state.filter[key];
+              state.filtered = state.filtered.filter(function(item) {
+                switch (typeof(item[key])) {
+                  case "string":
+                    return item[key] == context;
+                    break;
+                  case "boolean":
+                    return item[key];
+                    break;
+                  // case "number":
+                  //   return item[key];
+                  //   break;
+                  default:
+
+                }
+                  return item[key];
+              })
+            }
+            state.map = true;
+          }
+        }
         // changeBasic(state, option){
         //     state.markers.filter(marker => (marker[option] === option) ? marker.visible=true : marker.visible=false);
         // },

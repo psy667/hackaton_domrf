@@ -43,7 +43,7 @@
 
         <!--</li>-->
         <!--</ul>-->
-
+        <pre v-for='i in filtered'>{{ i.id }}</pre>
     </div>
 </template>
 
@@ -82,7 +82,9 @@
         computed: {
             ...mapState({
                 markers: state => state.markers,
-                selected: state => state.selected
+                selected: state => state.selected,
+                filtered: state => state.filtered,
+                filter: state => state.filter
             })
         },
         components:{
