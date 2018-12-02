@@ -28,7 +28,6 @@ export default new Vuex.Store({
         filterOut(state) {
             state.map = false;
             state.filtered = state.markers;
-
             for (let key in state.filter) {
                 if (state.filter[key]) {
                     let context = state.filter[key];
@@ -42,45 +41,44 @@ export default new Vuex.Store({
                             case "boolean":
                                 return item[key];
                                 break;
-                            // case "array":
-                            //     window.console.log("lol");
-                            //
-                            //     for(let i=0;i<item[key].length; i++){
-                            //         window.console.log("lol");
-                            //     }
-                            //     break;
                             case "object":
-                                for (let index in item[key]) {
-                                    let flag=false;
-                                    if(typeof item[key][index]=="object"){
-                                        for(let iter in item[key][index]){
-                                            window.console.log(item[key][index][iter],context[index][iter]);
-                                            if(context[index][iter]){
-                                                if(typeof item[key][index][iter]=="number"){
-                                                    if(!!item[key][index][iter]===!!context[index][iter]){
-                                                            return true;
-                                                    }
-                                                }
-                                                if(typeof item[key][index][iter]=="string"){
-                                                    if(item[key][index][iter]===context[index][iter]){
-                                                        if(flag){
-                                                            return true;
-                                                        }
-                                                        flag=true;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                    else{
-                                        if (context[index]) {
-                                            if(item[key][index] === context[index]){
-                                                return true;
-                                            }
-                                            return false;
-                                        }
+                                for (let index in item[key]){
+                                    window.console.log(context);
+                                    if(context[index] === !!item[key][index].count){
+                                        // window.console.log(item[key][index].count);
                                     }
                                 }
+                                // for (let index in item[key]) {
+                                //     let flag=false;
+                                //     if(typeof item[key][index]=="object"){
+                                //         for(let iter in item[key][index]){
+                                //             window.console.log(item[key][index][iter],context[index][iter]);
+                                //             if(context[index][iter]){
+                                //                 if(typeof item[key][index][iter]=="number"){
+                                //                     if(!!item[key][index][iter]===!!context[index][iter]){
+                                //                             return true;
+                                //                     }
+                                //                 }
+                                //                 if(typeof item[key][index][iter]=="string"){
+                                //                     if(item[key][index][iter]===context[index][iter]){
+                                //                         if(flag){
+                                //                             return true;
+                                //                         }
+                                //                         flag=true;
+                                //                     }
+                                //                 }
+                                //             }
+                                //         }
+                                //     }
+                                //     else{
+                                //         if (context[index]) {
+                                //             if(item[key][index] === context[index]){
+                                //                 return true;
+                                //             }
+                                //             return false;
+                                //         }
+                                //     }
+                                // }
                                 return false;
                             default:
                                 break;

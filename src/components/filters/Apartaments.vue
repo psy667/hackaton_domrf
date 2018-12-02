@@ -18,7 +18,7 @@
             <i class="form-icon"></i> Четырехкомнатные
         </label>
         <label class="form-checkbox">
-            <input v-model="studio" @change="changeApartaments" type="checkbox">
+            <input v-model="studioRoom" @change="changeApartaments" type="checkbox">
             <i class="form-icon"></i> Студии
         </label>
     </div>
@@ -33,35 +33,20 @@
                 twoRoom: false,
                 threeRoom: false,
                 fourRoom: false,
-                studio: false
+                studioRoom: false
             }
         },
         methods: {
             changeApartaments() {
-                this.$store.commit("addFilter", {
-                    apartaments: [
-                        {
-                            type: "Студии",
-                            count: this.studio
-                        },
-                        {
-                            type: "Однокомнатные",
-                            count: this.oneRoom
-                        },
-                        {
-                            type: "Двухкомнатные",
-                            count: this.twoRoom
-                        },
-                        {
-                            type: "Трехкомнатные",
-                            count: this.threeRoom
-                        },
-                        {
-                            type: "Четырехкомнатные",
-                            count: this.fourRoom
-                        }
-                    ]
-                })
+                this.$store.commit("addFilter",
+                    {
+                        oneRoom: {count: this.oneRoom},
+                        twoRoom: {count: this.twoRoom},
+                        threeRoom: {count: this.threeRoom},
+                        fourRoom: {count: this.fourRoom},
+                        studioRoom: {count: this.studioRoom}
+                    }
+                )
             }
         }
     }
