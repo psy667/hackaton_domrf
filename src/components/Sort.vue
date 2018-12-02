@@ -58,7 +58,6 @@
     }
 </script>
 
-<<<<<<< HEAD
 <style scoped>
   .container{
     text-align: left;
@@ -69,6 +68,3 @@
     margin-top: 10px;
   }
 </style>
-=======
-<style scoped></style>
->>>>>>> bbc8b247ce08bcf4f1d45f21e032c82d8cdc40a5
