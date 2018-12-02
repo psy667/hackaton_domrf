@@ -10,20 +10,18 @@
 <script>
     export default {
         name: "Kindergarten",
-        data(){
-            return{
-                kindergarten:false
+        data() {
+            return {
+                kindergarten: false
             }
         },
-        methods:{
-            changeKindergarten(){
-                this.$store.commit("addFilter", {kindergarten:this.kindergarten})
+        methods: {
+            changeKindergarten() {
+                this.$store.commit("addFilter", {kindergarten: this.kindergarten})
             }
         }
 
     }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

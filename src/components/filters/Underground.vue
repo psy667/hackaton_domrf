@@ -10,14 +10,14 @@
 <script>
     export default {
         name: "Underground",
-        data(){
-            return{
-                underground:false
+        data() {
+            return {
+                underground: false
             }
         },
-        methods:{
-            changeUnderground(){
-                this.$store.commit("addFilter", {underground:this.underground})
+        methods: {
+            changeUnderground() {
+                this.$store.commit("addFilter", {underground: this.underground})
             }
         }
     }

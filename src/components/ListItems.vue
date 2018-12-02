@@ -13,7 +13,8 @@
                     <div class="">{{ obj.address }}</div>
                     <div class="buttons">
                         <button class="btn btn-primary">На страницу объекта</button>
-                        <button class="btn" @click='markerSelect(obj)'>Подробнее<i class="icon icon-arrow-down"></i></button>
+                        <button class="btn" @click='markerSelect(obj)'>Подробнее<i class="icon icon-arrow-down"></i>
+                        </button>
                     </div>
                 </div>
 
@@ -29,22 +30,21 @@
 
     export default {
         name: "ListItems",
-        data(){
-            return{
-              obj: {
-                  name: 'lol',
-                  adress: '',
-                  coords: '',
-                  cost: ''
-              }
+        data() {
+            return {
+                obj: {
+                    name: 'lol',
+                    adress: '',
+                    coords: '',
+                    cost: ''
+                }
             }
         },
         methods: {
-          markerSelect(el) {
-              bus.$emit("markerSelect", el);
-          }
+            markerSelect(el) {
+                bus.$emit("markerSelect", el);
+            }
         },
-
         computed: {
             ...mapState({
                 markers: state => state.markers,
@@ -53,16 +53,16 @@
                 filter: state => state.filter
             })
         }
-
     }
 </script>
 
 <style lang="scss" scoped>
-    .container{
-      overflow-y: scroll;
-      height: 100vh;
+    .container {
+        overflow-y: scroll;
+        height: 100vh;
     }
-    .card{
+
+    .card {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -71,21 +71,24 @@
         border-radius: 5px;
         box-shadow: 0 3px 20px -5px #0003;
 
-        .card-image{
+        .card-image {
             width: 20%;
             height: 150px;
             overflow-y: hidden;
         }
-        .card-body{
+
+        .card-body {
             width: 80%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            .block{
+
+            .block {
                 display: flex;
                 justify-content: space-between;
             }
-            .buttons button:first-child{
+
+            .buttons button:first-child {
                 margin-right: 10px;
             }
         }

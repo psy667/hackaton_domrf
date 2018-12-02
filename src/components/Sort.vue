@@ -1,6 +1,7 @@
 <template>
     <div class="form-group">
-        <button class='btn btn-primary' @click="filterOut">Фильтровать</button><span class='h5'>Количество: {{ searchCount }}</span>
+        <button class='btn btn-primary' @click="filterOut">Фильтровать</button>
+        <span class='h5'>Количество: {{ searchCount }}</span>
         <apartaments></apartaments>
         <div class="divider"></div>
         <city></city>
@@ -25,29 +26,26 @@
     import Parking from './filters/Parking'
     import School from './filters/School'
     import Underground from './filters/Underground'
-    
+
     import {mapState} from 'vuex'
 
     export default {
         name: "Sort",
-        data(){
-          return{
-
-          }
+        data() {
+            return {}
         },
-        methods:{
-          filterOut(){
-              this.$store.commit("filterOut");
-          }
+        methods: {
+            filterOut() {
+                this.$store.commit("filterOut");
+            }
         },
         computed: {
-          ...mapState(["markers", "map","filtered","selected"]),
-
-          searchCount(){
-            return this.filtered.length;
-          }
+            ...mapState(["markers", "map", "filtered", "selected"]),
+            searchCount() {
+                return this.filtered.length;
+            }
         },
-        components:{
+        components: {
             Apartaments,
             City,
             Cost,
@@ -60,8 +58,4 @@
     }
 </script>
 
-<style scoped>
-  .container{
-    text-align: left;
-  }
-</style>
+<style scoped></style>

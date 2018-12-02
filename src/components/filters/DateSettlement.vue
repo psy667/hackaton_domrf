@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="h5">
-          Год заселения
+            Год заселения
         </div>
         <select @change="changeDate" v-model="date" class="form-select">
             <option :value="false">Любой год</option>
@@ -17,24 +17,22 @@
 <script>
     export default {
         name: "DateSettlement",
-        data(){
-            return{
-                date:false
+        data() {
+            return {
+                date: false
             }
         },
-        computed:{
-          compDate(){
-              return (!this.date) ? false : +this.date
+        computed: {
+            compDate() {
+                return (!this.date) ? false : +this.date
             }
         },
-        methods:{
-            changeDate(){
-                this.$store.commit("addFilter", {dateSettlement:{year:this.compDate}})
+        methods: {
+            changeDate() {
+                this.$store.commit("addFilter", {dateSettlement: {year: this.compDate}})
             }
         }
     }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

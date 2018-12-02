@@ -14,7 +14,6 @@ export default new Vuex.Store({
     mutations: {
         getData(state, data) {
             state.markers = data.obj;
-
         },
         selectOff(state) {
             state.selected = false;
@@ -31,9 +30,7 @@ export default new Vuex.Store({
             for (let key in state.filter) {
                 if (!!state.filter[key]) {
                     let context = state.filter[key];
-                    // window.console.log(state.filter);
                     state.filtered = state.filtered.filter(item => {
-                        // window.console.log(typeof context, context);
                         switch (typeof (item[key])) {
                             case "string":
                                 return item[key] == context;
@@ -42,24 +39,23 @@ export default new Vuex.Store({
                                 return item[key];
                                 break;
                             case "object":
-                                if(Object.keys(context)[0]=="year"){
-                                  for (let index in item[key]) {
-                                      if (context[index]) {
-                                          if (item[key][index] === context[index]) {
-                                              return true;
-                                          }
-                                          return false;
-                                      }
-                                  }
-                                }
-                                if(Object.keys(context)[0]=="count"){
-                                  for (let index in context){
-                                    if(context.count){
-                                      return item[key].count;
+                                if (Object.keys(context)[0] == "year") {
+                                    for (let index in item[key]) {
+                                        if (context[index]) {
+                                            if (item[key][index] === context[index]) {
+                                                return true;
+                                            }
+                                            return false;
+                                        }
                                     }
-                                  }
                                 }
-                                
+                                if (Object.keys(context)[0] == "count") {
+                                    for (let index in context) {
+                                        if (context.count) {
+                                            return item[key].count;
+                                        }
+                                    }
+                                }
                                 break;
                             default:
                                 break;

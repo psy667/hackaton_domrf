@@ -10,19 +10,17 @@
 <script>
     export default {
         name: "School",
-        data(){
-            return{
-                school:false
+        data() {
+            return {
+                school: false
             }
         },
-        methods:{
-            changeSchool(){
-                this.$store.commit("addFilter", {school:this.school})
+        methods: {
+            changeSchool() {
+                this.$store.commit("addFilter", {school: this.school})
             }
         }
     }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
