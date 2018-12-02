@@ -1,10 +1,6 @@
 <template lang="html">
     <div class="container">
-
-
-
-
-        <div v-if='selected' class="card" >
+        <div v-if="selected" class="card" >
           <button class="btn btn-action s-circle"
                   @click='$store.commit("selectOff")'><i class="icon icon-arrow-right"></i>
           </button>
@@ -35,7 +31,7 @@
 
           </div>
         </div>
-        <Sort v-else></Sort>
+        <Sort v-show="!selected"></Sort>
         <!--<ul v-else class='menu'>-->
         <!--<li v-for='obj in markers' class='menu-item'-->
         <!--@click='markerSelect(obj)'>-->
@@ -43,7 +39,7 @@
 
         <!--</li>-->
         <!--</ul>-->
-        <pre v-for='i in filtered'>{{ i.id }}</pre>
+        <pre v-for='i in filtered' :key="i.id">{{ i.id }}</pre>
     </div>
 </template>
 
@@ -94,6 +90,13 @@
 </script>
 
 <style lang="scss" scoped>
+    .hide{
+        display: none;
+    }
+    .show{
+        display: block;
+    }
+
     .container {
 
         height: 500px;

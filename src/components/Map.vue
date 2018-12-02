@@ -1,6 +1,7 @@
 <template>
     <div>
         <yandex-map
+                v-if="map"
                 :coords="[51.703246,39.179851]"
                 zoom="10"
                 style="width: 100%; height: 600px;"
@@ -11,7 +12,7 @@
                 :controls="['searchControl', 'typeSelector']"
                 map-type="map"
         >
-            <ymap-marker v-for='marker in markers'
+            <ymap-marker v-for='marker in filtered'
                          :callbacks="{ click(){markerSelect(marker)} }"
                          :v-show="marker.visible"
                          :marker-id="marker.id"
@@ -45,9 +46,7 @@
             }
         },
         computed: {
-            ...mapState({
-                markers: state => state.markers
-            })
+            ...mapState(["markers", "map","filtered"])
         },
         mounted() {
 

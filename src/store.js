@@ -7,7 +7,8 @@ export default new Vuex.Store({
     state: {
         selected: false,
         map: true,
-        markers: [{
+        markers: [
+            {
             id: 1,
             visible:true,
             name: "дом 76",
