@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>Ценовой диапозон:</p>
+        <p class='h5'>Ценовой диапозон:</p>
         <label class="form-label" for="cost-from">От:</label>
         <input class="form-input" @change="changeCost" v-model="costFrom" type="text" id="cost-from" placeholder="От">
         <label class="form-label" for="cost-to">До:</label>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <label class="form-label">Типы квартир</label>
+        <label class="form-label h5">Типы квартир</label>
         <label class="form-checkbox">
             <input v-model="oneRoom" @change="changeApartaments" type="checkbox">
             <i class="form-icon"></i> Однокомнатные

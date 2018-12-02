@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>Диапозон площади:</p>
+        <p class='h5'>Диапозон площади:</p>
         <label class="form-label" for="square-from">От:</label>
         <input @change="changeSquare" v-model="squareFrom" class="form-input" type="text" id="square-from" placeholder="От">
         <label class="form-label" for="square-to">До:</label>

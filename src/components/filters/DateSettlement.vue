@@ -1,5 +1,8 @@
 <template>
     <div>
+        <div class="h5">
+          Год заселения
+        </div>
         <select @change="changeDate" v-model="date" class="form-select">
             <option :value="false">Любой год</option>
             <option>2019</option>

@@ -18,6 +18,8 @@ export default {
   }
 }
 </script>
-<style lang='scss'>
-
+  <style lang='scss' scoped>
+  .container.column.col-4{
+    text-align: left;
+  }
 </style>

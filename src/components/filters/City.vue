@@ -1,6 +1,6 @@
 <template>
     <div>
-        <label class="form-label" for="city-input">Город</label>
+        <label class="form-label h5" for="city-input">Город</label>
         <input @change="changeCity" class="form-input" type="text" id="city-input" v-model="city" placeholder="Город">
     </div>
 </template>

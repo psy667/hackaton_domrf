@@ -1,15 +1,22 @@
 <template>
     <div class="form-group">
+        <button class='btn btn-primary' @click="filterOut">Фильтровать</button>
         <apartaments></apartaments>
+        <div class="divider"></div>
         <city></city>
+        <div class="divider"></div>
         <cost></cost>
+        <div class="divider"></div>
         <date-settlement></date-settlement>
+        <div class="divider"></div>
+        <underground></underground>
         <kindergarten></kindergarten>
         <parking></parking>
         <school></school>
+        <div class="divider"></div>
         <square></square>
-        <underground></underground>
-        <button @click="filterOut">Фильтровать</button>
+
+
     </div>
 </template>
 
@@ -51,5 +58,7 @@
 </script>
 
 <style scoped>
-
+  .container{
+    text-align: left;
+  }
 </style>

@@ -1,37 +1,35 @@
 {
   "obj": [{
     "id": 1,
-    "visible": true,
     "name": "дом 76",
     "city": "Барнаул",
     "adress": "Проспект Комсомольский,д 122А",
     "coords": [53.356673, 83.780332],
-    "apartaments": [{
-      "type": "Студия",
-      "count": 8,
-      "cost": 800000,
-      "square": 35
-    }, {
-      "type": "Однокомнатные",
-      "count": 0,
-      "cost": 0,
-      "square": 0
-    }, {
-      "type": "Двухкомнатные",
-      "count": 6,
-      "cost": 1500000,
-      "square": 65
-    }, {
-      "type": "Трехкомнатные",
-      "count": 2,
-      "cost": 2000000,
-      "square": 90
-    }, {
-      "type": "Четырехкомнатные",
-      "count": 2,
-      "cost": 2500000,
-      "square": 115
-    }],
+
+    "oneRoom": {
+      "cost": 21412121,
+      "count": 43
+    },
+
+    "twoRoom": {
+      "cost": 21412121,
+      "count": 43
+    },
+
+    "threeRoom": {
+      "cost": 21412121,
+      "count": 43
+    },
+
+    "fourRoom": {
+      "cost": 21412121,
+      "count": 43
+    },
+
+    "studioRoom": {
+      "cost": 21412121,
+      "count": 43
+    },
     "underground": false,
     "school": false,
     "kindergarten": false,

@@ -14,11 +14,11 @@
               <div class="divider"></div>
               <li>Адрес: {{ obj.adress }}</li>
               <div class="divider"></div>
-              <li>Студии: от {{ obj.apartaments[0].cost }} руб.</li>
-              <li>1-комнатные: от {{ obj.apartaments[1].cost }} руб.</li>
-              <li>2-комнатныe: от {{ obj.apartaments[2].cost }} руб.</li>
-              <li>3-комнатныe: от {{ obj.apartaments[3].cost }} руб.</li>
-              <li>4-комнатныe: от {{ obj.apartaments[4].cost }} руб.</li>
+              <li>Студии: от {{ obj.studioRoom.cost }} руб.</li>
+              <li>1-комнатные: от {{ obj.oneRoom.cost }} руб.</li>
+              <li>2-комнатныe: от {{ obj.twoRoom.cost }} руб.</li>
+              <li>3-комнатныe: от {{ obj.threeRoom.cost }} руб.</li>
+              <li>4-комнатныe: от {{ obj.fourRoom.cost }} руб.</li>
               <div class="divider"></div>
               <li>Заселение:  {{ obj.dateSettlement.quarter }}-й квартал {{ obj.dateSettlement.year }}</li>
             </ul>
@@ -39,7 +39,7 @@
 
         <!--</li>-->
         <!--</ul>-->
-        <pre v-for='i in filtered' :key="i.id">{{ i.id }}</pre>
+        <!-- <pre v-for='i in filtered' :key="i.id">{{ i.id }}</pre> -->
     </div>
 </template>
 
@@ -66,7 +66,7 @@
                 this.obj = {
                     ...el
                 };
-                window.console.log(this.obj.apartaments[0].cost);
+                
                 this.$store.commit("selectOn");
             }
         },
@@ -90,19 +90,15 @@
 </script>
 
 <style lang="scss" scoped>
-    .hide{
-        display: none;
-    }
-    .show{
-        display: block;
-    }
+
 
     .container {
+        max-height: calc(100vh - 60px);
+        overflow-y: scroll;
 
-        height: 500px;
     }
     .card{
-
+      text-align: left;
       .card-image{
         position: relative;
       }

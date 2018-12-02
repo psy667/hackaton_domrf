@@ -95,7 +95,7 @@ export default new Vuex.Store({
     },
     actions: {
         getData(context) {
-            let url = 'http://demo4779301.mockable.io/';
+            let url = 'http://demo4779301.mockable.io/db2';
 
             fetch(url).then(response => response.json()).then(data => {
                 context.commit('getData', data);
