@@ -1,5 +1,5 @@
 <template>
-    <div class="form-group">
+    <div class="form-group filters">
         <span class='h5'>Количество: {{ searchCount }}</span>
         <apartaments></apartaments>
         <div class="divider"></div>
@@ -13,7 +13,7 @@
         <kindergarten></kindergarten>
         <parking></parking>
         <school></school>
-        <button class='btn btn-primary' @click="filterOut">Фильтровать</button>
+        <button class='btn btn-primary filter-button' @click="filterOut">Фильтровать</button>
     </div>
 </template>
 
@@ -58,13 +58,17 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .container{
     text-align: left;
   }
-  button{
-    width: 100%;
-    height: 50px;
-    margin-top: 10px;
+  .filters{
+      padding-bottom: 100px;
+  }
+  .filter-button{
+      width: calc(33% - .4rem - 15px);
+      height: 50px;
+      position: fixed;
+      bottom: 10px;
   }
 </style>
