@@ -31,7 +31,7 @@ export default new Vuex.Store({
             for (let key in state.filter) {
                 if (!!state.filter[key]) {
                     let context = state.filter[key];
-                    window.console.log(state.filter);
+                    // window.console.log(state.filter);
                     state.filtered = state.filtered.filter(item => {
                         // window.console.log(typeof context, context);
                         switch (typeof (item[key])) {
@@ -42,45 +42,25 @@ export default new Vuex.Store({
                                 return item[key];
                                 break;
                             case "object":
-                                for (let index in item[key]){
-                                    console.log(context[index]);
-                                    if(context[index] === !!item[key][index].count){
-                                        window.console.log(context[index]);
-                                        // window.console.log(item[key][index].count);
-                                    }
+                                if(Object.keys(context)[0]=="year"){
+                                  for (let index in item[key]) {
+                                      if (context[index]) {
+                                          if (item[key][index] === context[index]) {
+                                              return true;
+                                          }
+                                          return false;
+                                      }
+                                  }
                                 }
-                                // for (let index in item[key]) {
-                                //     let flag=false;
-                                //     if(typeof item[key][index]=="object"){
-                                //         for(let iter in item[key][index]){
-                                //             window.console.log(item[key][index][iter],context[index][iter]);
-                                //             if(context[index][iter]){
-                                //                 if(typeof item[key][index][iter]=="number"){
-                                //                     if(!!item[key][index][iter]===!!context[index][iter]){
-                                //                             return true;
-                                //                     }
-                                //                 }
-                                //                 if(typeof item[key][index][iter]=="string"){
-                                //                     if(item[key][index][iter]===context[index][iter]){
-                                //                         if(flag){
-                                //                             return true;
-                                //                         }
-                                //                         flag=true;
-                                //                     }
-                                //                 }
-                                //             }
-                                //         }
-                                //     }
-                                //     else{
-                                //         if (context[index]) {
-                                //             if(item[key][index] === context[index]){
-                                //                 return true;
-                                //             }
-                                //             return false;
-                                //         }
-                                //     }
-                                // }
-                                return false;
+                                if(Object.keys(context)[0]=="count"){
+                                  for (let index in context){
+                                    if(context.count){
+                                      return item[key].count;
+                                    }
+                                  }
+                                }
+                                
+                                break;
                             default:
                                 break;
                         }
