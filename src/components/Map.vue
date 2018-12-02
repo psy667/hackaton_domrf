@@ -4,12 +4,12 @@
                 v-if="map"
                 :coords="[51.703246,39.179851]"
                 zoom="10"
-                style="width: 100%; height: 600px;"
+                style="width: 100%; height: 100vh;"
                 :cluster-options="{
                   1: {clusterDisableClickZoom: false}
                 }"
                 :behaviors="['default']"
-                :controls="['searchControl', 'typeSelector']"
+                :controls="['typeSelector']"
                 map-type="map"
         >
             <ymap-marker v-for='marker in filtered'
@@ -19,8 +19,11 @@
                          marker-type="placemark"
                          :coords="marker.coords"
                          :hint-content="marker.name"
-                         :options="{opacity:0}"
-                         :icon="{color: 'green', glyph: 'home'}"
+                         :icon="{
+                            layout: 'default#image',
+                            imageHref: marker.img,
+                            imageSize: [50, 50]
+                          }"
                          cluster-name="1"
                          :key="marker.id"
             ></ymap-marker>

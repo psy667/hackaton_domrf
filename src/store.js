@@ -6,7 +6,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
     state: {
         selected: false,
-        map: true,
+        map: false,
         markers: {},
         filter: {},
         filtered: []
