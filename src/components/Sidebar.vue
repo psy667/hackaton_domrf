@@ -1,13 +1,13 @@
 <template lang="html">
     <div class="container">
         <div v-if="selected" class="card">
-            <button class="btn btn-action s-circle"
-                    @click='$store.commit("selectOff")'
-            ><i class="icon icon-arrow-right"></i>
-            </button>
+
             <div class="card-image">
                 <img :src="obj.img" class="img-responsive">
-                <div class="card-title h5">{{ obj.name }}</div>
+                <div class="card-title h5">{{ obj.name }} <button class="btn btn-action s-circle"
+                        @click='$store.commit("selectOff")'
+                ><i class="icon icon-arrow-right"></i>
+                </button></div>
             </div>
             <div class="card-body">
                 <ul class="block">
@@ -21,6 +21,20 @@
                     <li>3-комнатныe: от {{ obj.threeRoom.cost.toLocaleString() }} руб.</li>
                     <li>4-комнатныe: от {{ obj.fourRoom.cost.toLocaleString() }} руб.</li>
                     <div class="divider"></div>
+                    <ul class="step">
+  <li class="step-item">
+    <a href="#" class="tooltip" data-tooltip="2018">Проектирование</a>
+  </li>
+  <li class="step-item active">
+    <a href="#" class="tooltip" data-tooltip="2020">Строительные работы</a>
+  </li>
+  <li class="step-item">
+    <a href="#" class="tooltip" data-tooltip="2021">Отделочные работы</a>
+  </li>
+  <li class="step-item">
+    <a href="#" class="tooltip" data-tooltip="2021">Сдача объекта</a>
+  </li>
+</ul>
                     <li>Заселение: {{ obj.dateSettlement.quarter }}-й квартал {{ obj.dateSettlement.year }}</li>
                 </ul>
                 <div class="buttons">
@@ -96,7 +110,9 @@
 
         .card-body {
             text-align: left;
-
+            .step-item a{
+              padding: 20px 5px;
+            }
             ul {
                 li {
                     list-style: none;
@@ -109,6 +125,7 @@
                 button {
                     width: 100%;
                     margin-bottom: 10px;
+
                 }
             }
         }

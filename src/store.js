@@ -39,6 +39,7 @@ export default new Vuex.Store({
                                 return item[key];
                                 break;
                             case "object":
+                                window.console.log(context);
                                 if (Object.keys(context)[0] == "year") {
                                     for (let index in item[key]) {
                                         if (context[index]) {
@@ -56,6 +57,7 @@ export default new Vuex.Store({
                                         }
                                     }
                                 }
+                                // if(Object.keys(context)[0] == "count")
                                 break;
                             default:
                                 break;
@@ -64,7 +66,6 @@ export default new Vuex.Store({
                     })
                 }
             }
-            window.console.log(state.filtered);
             state.map = true;
         }
     },
