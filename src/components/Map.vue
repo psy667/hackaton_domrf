@@ -2,8 +2,8 @@
     <div>
         <yandex-map
                 v-if="map"
-                :coords="[51.703246,39.179851]"
-                zoom="10"
+                :coords="[51.65,39.15]"
+                zoom="13"
                 style="width: 100%; height: 100vh;"
                 :cluster-options="{
                   1: {clusterDisableClickZoom: false}
