@@ -1,6 +1,6 @@
 <template>
     <div class="form-group">
-        <button class='btn btn-primary' @click="filterOut">Фильтровать</button>
+        <button class='btn btn-primary' @click="filterOut">Фильтровать</button><span class='h5'>Количество: {{ searchCount }}</span>
         <apartaments></apartaments>
         <div class="divider"></div>
         <city></city>
@@ -30,6 +30,8 @@
     import School from './filters/School'
     import Square from './filters/Square'
     import Underground from './filters/Underground'
+    
+    import {mapState} from 'vuex'
 
     export default {
         name: "Sort",
@@ -41,6 +43,13 @@
         methods:{
           filterOut(){
               this.$store.commit("filterOut");
+          }
+        },
+        computed: {
+          ...mapState(["markers", "map","filtered","selected"]),
+
+          searchCount(){
+            return this.filtered.length;
           }
         },
         components:{

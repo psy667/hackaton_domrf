@@ -1,19 +1,19 @@
 <template>
-    <div>
+    <div class='container'>
         <div class="card" v-for='obj in filtered' :key="obj.id">
             <div class="card-image">
-                <img src="https://0.pik.ru.cdn.pik-service.ru/specialoffers/0/180/6_36b545a33d449e9fee28a4779f63b6d6.jpg" class="img-responsive">
+                <img :src="obj.img" class="img-responsive">
             </div>
             <div class="card-body">
                 <div class="block">
                     <div class="card-title h3">{{ obj.name }}</div>
-                    <div class="card-title h4">Стоимость: от {{ obj.oneRoom.cost }} руб.</div>
+                    <div class="card-title h4">Стоимость: от {{ obj.oneRoom.cost.toLocaleString() }} руб.</div>
                 </div>
                 <div class="block">
-                    <div class="text-gray">{{ obj.adress }}</div>
+                    <div class="">{{ obj.address }}</div>
                     <div class="buttons">
                         <button class="btn btn-primary">На страницу объекта</button>
-                        <button class="btn">Подробнее<i class="icon icon-arrow-down"></i></button>
+                        <button class="btn" @click='markerSelect(obj)'>Подробнее<i class="icon icon-arrow-down"></i></button>
                     </div>
                 </div>
 
@@ -25,21 +25,43 @@
 
 <script>
     import {mapState} from 'vuex'
+    import {bus} from '../other_files/bus'
 
     export default {
         name: "ListItems",
         data(){
             return{
-
+              obj: {
+                  name: 'lol',
+                  adress: '',
+                  coords: '',
+                  cost: ''
+              }
             }
         },
+        methods: {
+          markerSelect(el) {
+              bus.$emit("markerSelect", el);
+          }
+        },
+
         computed: {
-            ...mapState(["filtered"])
+            ...mapState({
+                markers: state => state.markers,
+                selected: state => state.selected,
+                filtered: state => state.filtered,
+                filter: state => state.filter
+            })
         }
+
     }
 </script>
 
 <style lang="scss" scoped>
+    .container{
+      overflow-y: scroll;
+      height: 100vh;
+    }
     .card{
         display: flex;
         flex-direction: row;
@@ -48,8 +70,11 @@
         margin-bottom: 20px;
         border-radius: 5px;
         box-shadow: 0 3px 20px -5px #0003;
+
         .card-image{
             width: 20%;
+            height: 150px;
+            overflow-y: hidden;
         }
         .card-body{
             width: 80%;

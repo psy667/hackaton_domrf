@@ -2,7 +2,8 @@
     <div class="container">
         <div v-if="selected" class="card" >
           <button class="btn btn-action s-circle"
-                  @click='$store.commit("selectOff")'><i class="icon icon-arrow-right"></i>
+                  @click='$store.commit("selectOff")'
+                  ><i class="icon icon-arrow-right"></i>
           </button>
           <div class="card-image">
             <img :src="obj.img" class="img-responsive">
@@ -12,13 +13,13 @@
             <ul class="block">
               <li>Город: {{ obj.city }}</li>
               <div class="divider"></div>
-              <li>Адрес: {{ obj.adress }}</li>
+              <li>Адрес: {{ obj.address }}</li>
               <div class="divider"></div>
-              <li>Студии: от {{ obj.studioRoom.cost }} руб.</li>
-              <li>1-комнатные: от {{ obj.oneRoom.cost }} руб.</li>
-              <li>2-комнатныe: от {{ obj.twoRoom.cost }} руб.</li>
-              <li>3-комнатныe: от {{ obj.threeRoom.cost }} руб.</li>
-              <li>4-комнатныe: от {{ obj.fourRoom.cost }} руб.</li>
+              <li>Студии: от {{ obj.studioRoom.cost.toLocaleString() }} руб.</li>
+              <li>1-комнатные: от {{ obj.oneRoom.cost.toLocaleString() }} руб.</li>
+              <li>2-комнатныe: от {{ obj.twoRoom.cost.toLocaleString() }} руб.</li>
+              <li>3-комнатныe: от {{ obj.threeRoom.cost.toLocaleString() }} руб.</li>
+              <li>4-комнатныe: от {{ obj.fourRoom.cost.toLocaleString() }} руб.</li>
               <div class="divider"></div>
               <li>Заселение:  {{ obj.dateSettlement.quarter }}-й квартал {{ obj.dateSettlement.year }}</li>
             </ul>
@@ -29,8 +30,10 @@
 
 
 
+
           </div>
         </div>
+
         <Sort v-show="!selected"></Sort>
         <!--<ul v-else class='menu'>-->
         <!--<li v-for='obj in markers' class='menu-item'-->
@@ -53,7 +56,7 @@
         data() {
             return {
                 obj: {
-                    name: '',
+                    name: 'lol',
                     adress: '',
                     coords: '',
                     cost: ''
@@ -66,22 +69,20 @@
                 this.obj = {
                     ...el
                 };
-
+                // console.log(el)
                 this.$store.commit("selectOn");
             }
         },
         mounted() {
+
+
             bus.$on("markerSelect", (el) => {
                 this.markerSelect(el)
             });
+            this.$store.commit("selectOff");
         },
         computed: {
-            ...mapState({
-                markers: state => state.markers,
-                selected: state => state.selected,
-                filtered: state => state.filtered,
-                filter: state => state.filter
-            })
+            ...mapState(["markers", "map","filtered","selected"])
         },
         components:{
             Sort
