@@ -27,8 +27,6 @@
                          cluster-name="1"
                          :key="marker.id"
             ></ymap-marker>
-
-
         </yandex-map>
     </div>
 </template>
@@ -43,26 +41,15 @@
 
     export default {
         name: "Map",
-        data() {
-            return {
-
-            }
-        },
         computed: {
-            ...mapState(["markers", "map","filtered"])
-        },
-        mounted() {
-
+            ...mapState(["markers", "map", "filtered"])
         },
         methods: {
             markerSelect(el) {
                 bus.$emit("markerSelect", el);
             }
-
         }
     }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

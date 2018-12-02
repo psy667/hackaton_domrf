@@ -10,19 +10,17 @@
 <script>
     export default {
         name: "Parking",
-        data(){
-            return{
-                parking:false
+        data() {
+            return {
+                parking: false
             }
         },
-        methods:{
-            changeParking(){
-                this.$store.commit("addFilter", {parking:this.parking});
+        methods: {
+            changeParking() {
+                this.$store.commit("addFilter", {parking: this.parking});
             }
         }
     }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

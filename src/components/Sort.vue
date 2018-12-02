@@ -31,24 +31,21 @@
 
     export default {
         name: "Sort",
-        data(){
-          return{
-
-          }
+        data() {
+            return {}
         },
-        methods:{
-          filterOut(){
-              this.$store.commit("filterOut");
-          }
+        methods: {
+            filterOut() {
+                this.$store.commit("filterOut");
+            }
         },
         computed: {
-          ...mapState(["markers", "map","filtered","selected"]),
-
-          searchCount(){
-            return this.filtered.length;
-          }
+            ...mapState(["markers", "map", "filtered", "selected"]),
+            searchCount() {
+                return this.filtered.length;
+            }
         },
-        components:{
+        components: {
             Apartaments,
             City,
             Cost,
@@ -61,6 +58,7 @@
     }
 </script>
 
+<<<<<<< HEAD
 <style scoped>
   .container{
     text-align: left;
@@ -71,3 +69,6 @@
     margin-top: 10px;
   }
 </style>
+=======
+<style scoped></style>
+>>>>>>> bbc8b247ce08bcf4f1d45f21e032c82d8cdc40a5
