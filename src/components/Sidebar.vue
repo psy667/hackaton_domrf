@@ -5,7 +5,7 @@
                   @click='$store.commit("selectOff")'><i class="icon icon-arrow-right"></i>
           </button>
           <div class="card-image">
-            <img src="https://0.pik.ru.cdn.pik-service.ru/specialoffers/0/180/6_36b545a33d449e9fee28a4779f63b6d6.jpg" class="img-responsive">
+            <img :src="obj.img" class="img-responsive">
 <div class="card-title h5">{{ obj.name }}</div>
           </div>
           <div class="card-body">
@@ -66,7 +66,7 @@
                 this.obj = {
                     ...el
                 };
-                
+
                 this.$store.commit("selectOn");
             }
         },
