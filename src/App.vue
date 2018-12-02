@@ -5,9 +5,21 @@
       <router-link to="/list" class='tab-item'>Список</router-link>
     </div>
 
+
     <router-view/>
   </div>
 </template>
+
+<script>
+    export default{
+      mounted(){
+        this.$store.dispatch("getData");
+
+        console.log('Response');
+      }
+    }
+
+</script>
 
 <style lang="scss">
 #app {
