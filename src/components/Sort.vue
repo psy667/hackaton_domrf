@@ -1,6 +1,6 @@
 <template>
     <div class="form-group">
-        <button class='btn btn-primary' @click="filterOut">Фильтровать</button><span class='h5'>Количество: {{ searchCount }}</span>
+        <span class='h5'>Количество: {{ searchCount }}</span>
         <apartaments></apartaments>
         <div class="divider"></div>
         <city></city>
@@ -13,6 +13,7 @@
         <kindergarten></kindergarten>
         <parking></parking>
         <school></school>
+        <button class='btn btn-primary' @click="filterOut">Фильтровать</button>
     </div>
 </template>
 
@@ -25,7 +26,7 @@
     import Parking from './filters/Parking'
     import School from './filters/School'
     import Underground from './filters/Underground'
-    
+
     import {mapState} from 'vuex'
 
     export default {
@@ -63,5 +64,10 @@
 <style scoped>
   .container{
     text-align: left;
+  }
+  button{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
   }
 </style>

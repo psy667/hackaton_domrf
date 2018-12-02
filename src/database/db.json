@@ -1,78 +1,1538 @@
 {
   "obj": [{
-    "id": 1,
-    "name": "дом 76",
-    "city": "Барнаул",
-    "adress": "Проспект Комсомольский,д 122А",
-    "coords": [53.356673, 83.780332],
-
+    "id": 0,
+    "name": "Дом 0",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/1eabaeb9-9df2-2e6c-8476-c0ededf8503a/levoberej_89990c0dd2323cb8cf6819b76d1511b9_75b0ee00edf96aa0a6edaa96a0b2f315_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Театральная д. 67",
+    "coords": [51.63579482124789, 39.1461755921596],
     "oneRoom": {
-      "cost": 21412121,
-      "count": 43
+      "cost": 1142000,
+      "count": 0
     },
-
     "twoRoom": {
-      "cost": 21412121,
-      "count": 43
+      "cost": 1701000,
+      "count": 0
     },
-
     "threeRoom": {
-      "cost": 21412121,
-      "count": 43
+      "cost": 2089000,
+      "count": 0
     },
-
     "fourRoom": {
-      "cost": 21412121,
-      "count": 43
+      "cost": 3239000,
+      "count": 0
     },
-
     "studioRoom": {
-      "cost": 21412121,
-      "count": 43
+      "cost": 1233000,
+      "count": 0
+    },
+    "underground": false,
+    "school": false,
+    "kindergarten": true,
+    "parking": true,
+    "dateSettlement": {
+      "quarter": 0,
+      "year": 2023
+    }
+  }, {
+    "id": 1,
+    "name": "Дом 1",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/c3c2b9db-987e-11e7-b49c-001ec9d8c6a2/181102_dmitrovskiy_park_1_85649d8821abf278b0c2890825fdb597_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Карла Маркса д. 97",
+    "coords": [51.636546622041486, 39.102711601705785],
+    "oneRoom": {
+      "cost": 1129000,
+      "count": 2
+    },
+    "twoRoom": {
+      "cost": 1642000,
+      "count": 2
+    },
+    "threeRoom": {
+      "cost": 2165000,
+      "count": 7
+    },
+    "fourRoom": {
+      "cost": 3265000,
+      "count": 6
+    },
+    "studioRoom": {
+      "cost": 1271000,
+      "count": 8
+    },
+    "underground": false,
+    "school": true,
+    "kindergarten": true,
+    "parking": false,
+    "dateSettlement": {
+      "quarter": 2,
+      "year": 2024
+    }
+  }, {
+    "id": 2,
+    "name": "Дом 2",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/5bbd38df-7412-11e5-8124-001ec9d8c6a2/img_9383_5bdbfedc967bdae2203e4cf2a5bd266b_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Кольцовская д. 87",
+    "coords": [51.61185056301011, 39.17168494813489],
+    "oneRoom": {
+      "cost": 1491000,
+      "count": 5
+    },
+    "twoRoom": {
+      "cost": 1532000,
+      "count": 6
+    },
+    "threeRoom": {
+      "cost": 2022000,
+      "count": 3
+    },
+    "fourRoom": {
+      "cost": 3323000,
+      "count": 3
+    },
+    "studioRoom": {
+      "cost": 1569000,
+      "count": 0
+    },
+    "underground": true,
+    "school": true,
+    "kindergarten": false,
+    "parking": true,
+    "dateSettlement": {
+      "quarter": 1,
+      "year": 2021
+    }
+  }, {
+    "id": 3,
+    "name": "Дом 3",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/f316edf2-a041-11e6-8483-001ec9d8c6a2/dji_0006-copy.rev00_44729a8d4c39dafdad33c723a69e4e45_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Плехановская д. 67",
+    "coords": [51.650060239530326, 39.170002664802496],
+    "oneRoom": {
+      "cost": 1280000,
+      "count": 0
+    },
+    "twoRoom": {
+      "cost": 1611000,
+      "count": 3
+    },
+    "threeRoom": {
+      "cost": 2233000,
+      "count": 6
+    },
+    "fourRoom": {
+      "cost": 3253000,
+      "count": 8
+    },
+    "studioRoom": {
+      "cost": 1309000,
+      "count": 3
+    },
+    "underground": true,
+    "school": false,
+    "kindergarten": false,
+    "parking": false,
+    "dateSettlement": {
+      "quarter": 0,
+      "year": 2021
+    }
+  }, {
+    "id": 4,
+    "name": "Дом 4",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/1eabaeb9-9df2-2e6c-8476-c0ededf8503a/levoberej_89990c0dd2323cb8cf6819b76d1511b9_75b0ee00edf96aa0a6edaa96a0b2f315_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Плехановская д. 4",
+    "coords": [51.68230134019357, 39.17377919537018],
+    "oneRoom": {
+      "cost": 1386000,
+      "count": 2
+    },
+    "twoRoom": {
+      "cost": 1529000,
+      "count": 7
+    },
+    "threeRoom": {
+      "cost": 2478000,
+      "count": 3
+    },
+    "fourRoom": {
+      "cost": 3066000,
+      "count": 4
+    },
+    "studioRoom": {
+      "cost": 2070000,
+      "count": 3
+    },
+    "underground": true,
+    "school": true,
+    "kindergarten": false,
+    "parking": false,
+    "dateSettlement": {
+      "quarter": 1,
+      "year": 2020
+    }
+  }, {
+    "id": 5,
+    "name": "Дом 5",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/65098000/65098933-a7f6-11e6-8483-001ec9d8c6a2/main-zarechnaya_4cb94ffb3267884d7128c178c0f16c6c_f099a6c18bbbe1ed869fc2a642aaf9d9_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Кольцовская д. 86",
+    "coords": [51.66981890451497, 39.17476256181304],
+    "oneRoom": {
+      "cost": 1180000,
+      "count": 7
+    },
+    "twoRoom": {
+      "cost": 1528000,
+      "count": 6
+    },
+    "threeRoom": {
+      "cost": 2023000,
+      "count": 6
+    },
+    "fourRoom": {
+      "cost": 3268000,
+      "count": 3
+    },
+    "studioRoom": {
+      "cost": 1992000,
+      "count": 2
+    },
+    "underground": true,
+    "school": false,
+    "kindergarten": true,
+    "parking": false,
+    "dateSettlement": {
+      "quarter": 0,
+      "year": 2023
+    }
+  }, {
+    "id": 6,
+    "name": "Дом 6",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/5bbd38df-7412-11e5-8124-001ec9d8c6a2/img_9383_5bdbfedc967bdae2203e4cf2a5bd266b_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Театральная д. 17",
+    "coords": [51.63435934870602, 39.122446573061495],
+    "oneRoom": {
+      "cost": 1497000,
+      "count": 6
+    },
+    "twoRoom": {
+      "cost": 1598000,
+      "count": 6
+    },
+    "threeRoom": {
+      "cost": 2385000,
+      "count": 2
+    },
+    "fourRoom": {
+      "cost": 3423000,
+      "count": 8
+    },
+    "studioRoom": {
+      "cost": 1786000,
+      "count": 4
+    },
+    "underground": false,
+    "school": true,
+    "kindergarten": false,
+    "parking": false,
+    "dateSettlement": {
+      "quarter": 1,
+      "year": 2024
+    }
+  }, {
+    "id": 7,
+    "name": "Дом 7",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/c3c2b9db-987e-11e7-b49c-001ec9d8c6a2/181102_dmitrovskiy_park_1_85649d8821abf278b0c2890825fdb597_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Остужева д. 76",
+    "coords": [51.69504719072532, 39.13816139608878],
+    "oneRoom": {
+      "cost": 1064000,
+      "count": 8
+    },
+    "twoRoom": {
+      "cost": 1536000,
+      "count": 2
+    },
+    "threeRoom": {
+      "cost": 2054000,
+      "count": 6
+    },
+    "fourRoom": {
+      "cost": 3172000,
+      "count": 9
+    },
+    "studioRoom": {
+      "cost": 1965000,
+      "count": 4
+    },
+    "underground": true,
+    "school": false,
+    "kindergarten": true,
+    "parking": false,
+    "dateSettlement": {
+      "quarter": 3,
+      "year": 2023
+    }
+  }, {
+    "id": 8,
+    "name": "Дом 8",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/0badc0dc-9c59-11e6-8483-001ec9d8c6a2/severnyii_654ddbfc279ef24792d89f562d3a9986_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Антонова-Овсиенко д. 78",
+    "coords": [51.691703640865974, 39.18417274012666],
+    "oneRoom": {
+      "cost": 1341000,
+      "count": 3
+    },
+    "twoRoom": {
+      "cost": 1799000,
+      "count": 4
+    },
+    "threeRoom": {
+      "cost": 2327000,
+      "count": 9
+    },
+    "fourRoom": {
+      "cost": 3133000,
+      "count": 0
+    },
+    "studioRoom": {
+      "cost": 1514000,
+      "count": 2
+    },
+    "underground": true,
+    "school": false,
+    "kindergarten": true,
+    "parking": true,
+    "dateSettlement": {
+      "quarter": 3,
+      "year": 2020
+    }
+  }, {
+    "id": 9,
+    "name": "Дом 9",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/c3c2b9db-987e-11e7-b49c-001ec9d8c6a2/181102_dmitrovskiy_park_1_85649d8821abf278b0c2890825fdb597_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Кольцовская д. 5",
+    "coords": [51.603992714785974, 39.15934925864632],
+    "oneRoom": {
+      "cost": 1339000,
+      "count": 6
+    },
+    "twoRoom": {
+      "cost": 1815000,
+      "count": 4
+    },
+    "threeRoom": {
+      "cost": 2050000,
+      "count": 7
+    },
+    "fourRoom": {
+      "cost": 3112000,
+      "count": 2
+    },
+    "studioRoom": {
+      "cost": 1276000,
+      "count": 6
+    },
+    "underground": false,
+    "school": false,
+    "kindergarten": true,
+    "parking": false,
+    "dateSettlement": {
+      "quarter": 3,
+      "year": 2022
+    }
+  }, {
+    "id": 10,
+    "name": "Дом 10",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/897dcaa9-773a-11e5-8124-001ec9d8c6a2/img_51821_2953ce5780f26e6960efdb6004ca912a_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Антонова-Овсиенко д. 88",
+    "coords": [51.64191303135474, 39.16846376787899],
+    "oneRoom": {
+      "cost": 1448000,
+      "count": 8
+    },
+    "twoRoom": {
+      "cost": 1586000,
+      "count": 8
+    },
+    "threeRoom": {
+      "cost": 2407000,
+      "count": 7
+    },
+    "fourRoom": {
+      "cost": 3117000,
+      "count": 6
+    },
+    "studioRoom": {
+      "cost": 2387000,
+      "count": 1
+    },
+    "underground": true,
+    "school": true,
+    "kindergarten": false,
+    "parking": false,
+    "dateSettlement": {
+      "quarter": 3,
+      "year": 2023
+    }
+  }, {
+    "id": 11,
+    "name": "Дом 11",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/5bbd38df-7412-11e5-8124-001ec9d8c6a2/img_9383_5bdbfedc967bdae2203e4cf2a5bd266b_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Остужева д. 91",
+    "coords": [51.66011974184253, 39.19171582769653],
+    "oneRoom": {
+      "cost": 1490000,
+      "count": 0
+    },
+    "twoRoom": {
+      "cost": 1726000,
+      "count": 5
+    },
+    "threeRoom": {
+      "cost": 2197000,
+      "count": 8
+    },
+    "fourRoom": {
+      "cost": 3054000,
+      "count": 6
+    },
+    "studioRoom": {
+      "cost": 2218000,
+      "count": 6
+    },
+    "underground": true,
+    "school": false,
+    "kindergarten": false,
+    "parking": false,
+    "dateSettlement": {
+      "quarter": 3,
+      "year": 2023
+    }
+  }, {
+    "id": 12,
+    "name": "Дом 12",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/102c34f4-cbbf-5d7c-92ee-79b38c0c0fe0/dji_0061-9_c5bf78d98fc975db131eab9e3b54d91b_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Карла Маркса д. 9",
+    "coords": [51.64396890213765, 39.17225784496411],
+    "oneRoom": {
+      "cost": 1340000,
+      "count": 3
+    },
+    "twoRoom": {
+      "cost": 1749000,
+      "count": 8
+    },
+    "threeRoom": {
+      "cost": 2068000,
+      "count": 9
+    },
+    "fourRoom": {
+      "cost": 3099000,
+      "count": 10
+    },
+    "studioRoom": {
+      "cost": 1553000,
+      "count": 3
+    },
+    "underground": true,
+    "school": true,
+    "kindergarten": false,
+    "parking": true,
+    "dateSettlement": {
+      "quarter": 3,
+      "year": 2018
+    }
+  }, {
+    "id": 13,
+    "name": "Дом 13",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/a6260ba6-a0de-11e6-8483-001ec9d8c6a2/img_4160_01045bf84b7f1324f86afe0ba2888d07_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Театральная д. 72",
+    "coords": [51.63359148868873, 39.12106626740778],
+    "oneRoom": {
+      "cost": 1148000,
+      "count": 3
+    },
+    "twoRoom": {
+      "cost": 1603000,
+      "count": 10
+    },
+    "threeRoom": {
+      "cost": 2440000,
+      "count": 9
+    },
+    "fourRoom": {
+      "cost": 3014000,
+      "count": 2
+    },
+    "studioRoom": {
+      "cost": 1901000,
+      "count": 5
+    },
+    "underground": false,
+    "school": true,
+    "kindergarten": false,
+    "parking": true,
+    "dateSettlement": {
+      "quarter": 1,
+      "year": 2021
+    }
+  }, {
+    "id": 14,
+    "name": "Дом 14",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/c3c2b9db-987e-11e7-b49c-001ec9d8c6a2/181102_dmitrovskiy_park_1_85649d8821abf278b0c2890825fdb597_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Плехановская д. 54",
+    "coords": [51.64979500407281, 39.16364196932344],
+    "oneRoom": {
+      "cost": 1197000,
+      "count": 9
+    },
+    "twoRoom": {
+      "cost": 1706000,
+      "count": 7
+    },
+    "threeRoom": {
+      "cost": 2158000,
+      "count": 6
+    },
+    "fourRoom": {
+      "cost": 3350000,
+      "count": 2
+    },
+    "studioRoom": {
+      "cost": 2000000,
+      "count": 1
+    },
+    "underground": true,
+    "school": true,
+    "kindergarten": true,
+    "parking": true,
+    "dateSettlement": {
+      "quarter": 2,
+      "year": 2023
+    }
+  }, {
+    "id": 15,
+    "name": "Дом 15",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/897dcaa9-773a-11e5-8124-001ec9d8c6a2/img_51821_2953ce5780f26e6960efdb6004ca912a_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Плехановская д. 84",
+    "coords": [51.67122022293316, 39.19116192951308],
+    "oneRoom": {
+      "cost": 1497000,
+      "count": 0
+    },
+    "twoRoom": {
+      "cost": 1931000,
+      "count": 8
+    },
+    "threeRoom": {
+      "cost": 2188000,
+      "count": 1
+    },
+    "fourRoom": {
+      "cost": 3021000,
+      "count": 6
+    },
+    "studioRoom": {
+      "cost": 2352000,
+      "count": 9
+    },
+    "underground": true,
+    "school": false,
+    "kindergarten": false,
+    "parking": true,
+    "dateSettlement": {
+      "quarter": 2,
+      "year": 2020
+    }
+  }, {
+    "id": 16,
+    "name": "Дом 16",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/1eabaeb9-9df2-2e6c-8476-c0ededf8503a/levoberej_89990c0dd2323cb8cf6819b76d1511b9_75b0ee00edf96aa0a6edaa96a0b2f315_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Антонова-Овсиенко д. 5",
+    "coords": [51.671311766989966, 39.1327032375661],
+    "oneRoom": {
+      "cost": 1100000,
+      "count": 10
+    },
+    "twoRoom": {
+      "cost": 1966000,
+      "count": 4
+    },
+    "threeRoom": {
+      "cost": 2462000,
+      "count": 8
+    },
+    "fourRoom": {
+      "cost": 3070000,
+      "count": 8
+    },
+    "studioRoom": {
+      "cost": 2211000,
+      "count": 9
+    },
+    "underground": false,
+    "school": false,
+    "kindergarten": false,
+    "parking": true,
+    "dateSettlement": {
+      "quarter": 0,
+      "year": 2019
+    }
+  }, {
+    "id": 17,
+    "name": "Дом 17",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/897dcaa9-773a-11e5-8124-001ec9d8c6a2/img_51821_2953ce5780f26e6960efdb6004ca912a_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Антонова-Овсиенко д. 36",
+    "coords": [51.66381050733552, 39.15709284887741],
+    "oneRoom": {
+      "cost": 1484000,
+      "count": 1
+    },
+    "twoRoom": {
+      "cost": 1512000,
+      "count": 2
+    },
+    "threeRoom": {
+      "cost": 2067000,
+      "count": 2
+    },
+    "fourRoom": {
+      "cost": 3488000,
+      "count": 8
+    },
+    "studioRoom": {
+      "cost": 2400000,
+      "count": 4
+    },
+    "underground": true,
+    "school": true,
+    "kindergarten": false,
+    "parking": false,
+    "dateSettlement": {
+      "quarter": 0,
+      "year": 2018
+    }
+  }, {
+    "id": 18,
+    "name": "Дом 18",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/897dcaa9-773a-11e5-8124-001ec9d8c6a2/img_51821_2953ce5780f26e6960efdb6004ca912a_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Остужева д. 24",
+    "coords": [51.62627541393446, 39.10628362960393],
+    "oneRoom": {
+      "cost": 1463000,
+      "count": 5
+    },
+    "twoRoom": {
+      "cost": 1892000,
+      "count": 8
+    },
+    "threeRoom": {
+      "cost": 2487000,
+      "count": 2
+    },
+    "fourRoom": {
+      "cost": 3009000,
+      "count": 9
+    },
+    "studioRoom": {
+      "cost": 1296000,
+      "count": 3
+    },
+    "underground": false,
+    "school": false,
+    "kindergarten": true,
+    "parking": true,
+    "dateSettlement": {
+      "quarter": 2,
+      "year": 2020
+    }
+  }, {
+    "id": 19,
+    "name": "Дом 19",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/0bff26fc-cf88-11e7-ac2a-001ec9d8c6a2/sheremetievskiy_12_aef54d3b482a4a79d349f387c27d37a7_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Карла Маркса д. 81",
+    "coords": [51.69300346242314, 39.114123318477624],
+    "oneRoom": {
+      "cost": 1412000,
+      "count": 7
+    },
+    "twoRoom": {
+      "cost": 1626000,
+      "count": 5
+    },
+    "threeRoom": {
+      "cost": 2108000,
+      "count": 8
+    },
+    "fourRoom": {
+      "cost": 3388000,
+      "count": 0
+    },
+    "studioRoom": {
+      "cost": 1704000,
+      "count": 6
+    },
+    "underground": true,
+    "school": true,
+    "kindergarten": true,
+    "parking": false,
+    "dateSettlement": {
+      "quarter": 1,
+      "year": 2018
+    }
+  }, {
+    "id": 20,
+    "name": "Дом 20",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/c3c2b9db-987e-11e7-b49c-001ec9d8c6a2/181102_dmitrovskiy_park_1_85649d8821abf278b0c2890825fdb597_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Кольцовская д. 81",
+    "coords": [51.67489166054581, 39.16409443326814],
+    "oneRoom": {
+      "cost": 1111000,
+      "count": 3
+    },
+    "twoRoom": {
+      "cost": 1550000,
+      "count": 2
+    },
+    "threeRoom": {
+      "cost": 2333000,
+      "count": 1
+    },
+    "fourRoom": {
+      "cost": 3176000,
+      "count": 3
+    },
+    "studioRoom": {
+      "cost": 2056000,
+      "count": 9
+    },
+    "underground": false,
+    "school": false,
+    "kindergarten": true,
+    "parking": true,
+    "dateSettlement": {
+      "quarter": 2,
+      "year": 2023
+    }
+  }, {
+    "id": 21,
+    "name": "Дом 21",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/0badc0dc-9c59-11e6-8483-001ec9d8c6a2/severnyii_654ddbfc279ef24792d89f562d3a9986_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Плехановская д. 98",
+    "coords": [51.64857649839912, 39.16606423574913],
+    "oneRoom": {
+      "cost": 1188000,
+      "count": 3
+    },
+    "twoRoom": {
+      "cost": 1797000,
+      "count": 9
+    },
+    "threeRoom": {
+      "cost": 2446000,
+      "count": 8
+    },
+    "fourRoom": {
+      "cost": 3316000,
+      "count": 4
+    },
+    "studioRoom": {
+      "cost": 2372000,
+      "count": 7
+    },
+    "underground": false,
+    "school": true,
+    "kindergarten": true,
+    "parking": true,
+    "dateSettlement": {
+      "quarter": 2,
+      "year": 2020
+    }
+  }, {
+    "id": 22,
+    "name": "Дом 22",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/5bbd38df-7412-11e5-8124-001ec9d8c6a2/img_9383_5bdbfedc967bdae2203e4cf2a5bd266b_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Карла Маркса д. 40",
+    "coords": [51.60548394206054, 39.10979943816415],
+    "oneRoom": {
+      "cost": 1022000,
+      "count": 8
+    },
+    "twoRoom": {
+      "cost": 1930000,
+      "count": 6
+    },
+    "threeRoom": {
+      "cost": 2418000,
+      "count": 8
+    },
+    "fourRoom": {
+      "cost": 3294000,
+      "count": 6
+    },
+    "studioRoom": {
+      "cost": 1810000,
+      "count": 4
+    },
+    "underground": false,
+    "school": false,
+    "kindergarten": true,
+    "parking": true,
+    "dateSettlement": {
+      "quarter": 3,
+      "year": 2022
+    }
+  }, {
+    "id": 23,
+    "name": "Дом 23",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/1eabaeb9-9df2-2e6c-8476-c0ededf8503a/levoberej_89990c0dd2323cb8cf6819b76d1511b9_75b0ee00edf96aa0a6edaa96a0b2f315_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Плехановская д. 8",
+    "coords": [51.61146346952937, 39.1607631019069],
+    "oneRoom": {
+      "cost": 1384000,
+      "count": 7
+    },
+    "twoRoom": {
+      "cost": 1529000,
+      "count": 10
+    },
+    "threeRoom": {
+      "cost": 2454000,
+      "count": 9
+    },
+    "fourRoom": {
+      "cost": 3100000,
+      "count": 9
+    },
+    "studioRoom": {
+      "cost": 2138000,
+      "count": 2
+    },
+    "underground": true,
+    "school": true,
+    "kindergarten": false,
+    "parking": false,
+    "dateSettlement": {
+      "quarter": 2,
+      "year": 2024
+    }
+  }, {
+    "id": 24,
+    "name": "Дом 24",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/0bff26fc-cf88-11e7-ac2a-001ec9d8c6a2/sheremetievskiy_12_aef54d3b482a4a79d349f387c27d37a7_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Карла Маркса д. 68",
+    "coords": [51.62055986372921, 39.181417841618824],
+    "oneRoom": {
+      "cost": 1314000,
+      "count": 1
+    },
+    "twoRoom": {
+      "cost": 1620000,
+      "count": 2
+    },
+    "threeRoom": {
+      "cost": 2492000,
+      "count": 6
+    },
+    "fourRoom": {
+      "cost": 3272000,
+      "count": 9
+    },
+    "studioRoom": {
+      "cost": 2016000,
+      "count": 8
+    },
+    "underground": true,
+    "school": true,
+    "kindergarten": true,
+    "parking": false,
+    "dateSettlement": {
+      "quarter": 0,
+      "year": 2022
+    }
+  }, {
+    "id": 25,
+    "name": "Дом 25",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/f04fd2bc-969a-11e6-8483-001ec9d8c6a2/ilinckye_52c74366a36d9a1915392c5232f107da_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Театральная д. 51",
+    "coords": [51.63612664531152, 39.130187908826485],
+    "oneRoom": {
+      "cost": 1245000,
+      "count": 0
+    },
+    "twoRoom": {
+      "cost": 1650000,
+      "count": 7
+    },
+    "threeRoom": {
+      "cost": 2112000,
+      "count": 9
+    },
+    "fourRoom": {
+      "cost": 3138000,
+      "count": 10
+    },
+    "studioRoom": {
+      "cost": 2423000,
+      "count": 2
+    },
+    "underground": false,
+    "school": true,
+    "kindergarten": true,
+    "parking": true,
+    "dateSettlement": {
+      "quarter": 2,
+      "year": 2022
+    }
+  }, {
+    "id": 26,
+    "name": "Дом 26",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/a6260ba6-a0de-11e6-8483-001ec9d8c6a2/img_4160_01045bf84b7f1324f86afe0ba2888d07_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Проспект Революции д. 85",
+    "coords": [51.60218979347865, 39.11287975350935],
+    "oneRoom": {
+      "cost": 1460000,
+      "count": 2
+    },
+    "twoRoom": {
+      "cost": 1733000,
+      "count": 2
+    },
+    "threeRoom": {
+      "cost": 2146000,
+      "count": 6
+    },
+    "fourRoom": {
+      "cost": 3304000,
+      "count": 1
+    },
+    "studioRoom": {
+      "cost": 1423000,
+      "count": 2
     },
     "underground": false,
     "school": false,
     "kindergarten": false,
     "parking": false,
     "dateSettlement": {
+      "quarter": 2,
+      "year": 2025
+    }
+  }, {
+    "id": 27,
+    "name": "Дом 27",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/0badc0dc-9c59-11e6-8483-001ec9d8c6a2/severnyii_654ddbfc279ef24792d89f562d3a9986_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Плехановская д. 51",
+    "coords": [51.60699443874127, 39.12841077040748],
+    "oneRoom": {
+      "cost": 1055000,
+      "count": 1
+    },
+    "twoRoom": {
+      "cost": 1529000,
+      "count": 6
+    },
+    "threeRoom": {
+      "cost": 2195000,
+      "count": 9
+    },
+    "fourRoom": {
+      "cost": 3277000,
+      "count": 1
+    },
+    "studioRoom": {
+      "cost": 1368000,
+      "count": 10
+    },
+    "underground": false,
+    "school": false,
+    "kindergarten": true,
+    "parking": true,
+    "dateSettlement": {
       "quarter": 3,
+      "year": 2022
+    }
+  }, {
+    "id": 28,
+    "name": "Дом 28",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/102c34f4-cbbf-5d7c-92ee-79b38c0c0fe0/dji_0061-9_c5bf78d98fc975db131eab9e3b54d91b_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Антонова-Овсиенко д. 2",
+    "coords": [51.62535416929491, 39.130066054457366],
+    "oneRoom": {
+      "cost": 1322000,
+      "count": 9
+    },
+    "twoRoom": {
+      "cost": 1954000,
+      "count": 9
+    },
+    "threeRoom": {
+      "cost": 2233000,
+      "count": 0
+    },
+    "fourRoom": {
+      "cost": 3434000,
+      "count": 4
+    },
+    "studioRoom": {
+      "cost": 2229000,
+      "count": 10
+    },
+    "underground": false,
+    "school": true,
+    "kindergarten": true,
+    "parking": true,
+    "dateSettlement": {
+      "quarter": 3,
+      "year": 2020
+    }
+  }, {
+    "id": 29,
+    "name": "Дом 29",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/0badc0dc-9c59-11e6-8483-001ec9d8c6a2/severnyii_654ddbfc279ef24792d89f562d3a9986_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Театральная д. 35",
+    "coords": [51.611826660294845, 39.18210277491762],
+    "oneRoom": {
+      "cost": 1406000,
+      "count": 5
+    },
+    "twoRoom": {
+      "cost": 1753000,
+      "count": 2
+    },
+    "threeRoom": {
+      "cost": 2179000,
+      "count": 1
+    },
+    "fourRoom": {
+      "cost": 3429000,
+      "count": 3
+    },
+    "studioRoom": {
+      "cost": 1294000,
+      "count": 9
+    },
+    "underground": true,
+    "school": true,
+    "kindergarten": true,
+    "parking": false,
+    "dateSettlement": {
+      "quarter": 2,
+      "year": 2023
+    }
+  }, {
+    "id": 30,
+    "name": "Дом 30",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/5bbd38df-7412-11e5-8124-001ec9d8c6a2/img_9383_5bdbfedc967bdae2203e4cf2a5bd266b_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Плехановская д. 4",
+    "coords": [51.62312276886216, 39.18872629180869],
+    "oneRoom": {
+      "cost": 1168000,
+      "count": 7
+    },
+    "twoRoom": {
+      "cost": 1835000,
+      "count": 6
+    },
+    "threeRoom": {
+      "cost": 2342000,
+      "count": 8
+    },
+    "fourRoom": {
+      "cost": 3451000,
+      "count": 7
+    },
+    "studioRoom": {
+      "cost": 1982000,
+      "count": 7
+    },
+    "underground": false,
+    "school": false,
+    "kindergarten": false,
+    "parking": true,
+    "dateSettlement": {
+      "quarter": 4,
+      "year": 2021
+    }
+  }, {
+    "id": 31,
+    "name": "Дом 31",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/f04fd2bc-969a-11e6-8483-001ec9d8c6a2/ilinckye_52c74366a36d9a1915392c5232f107da_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Плехановская д. 11",
+    "coords": [51.621787897942816, 39.15896550975577],
+    "oneRoom": {
+      "cost": 1131000,
+      "count": 3
+    },
+    "twoRoom": {
+      "cost": 1861000,
+      "count": 1
+    },
+    "threeRoom": {
+      "cost": 2156000,
+      "count": 3
+    },
+    "fourRoom": {
+      "cost": 3064000,
+      "count": 7
+    },
+    "studioRoom": {
+      "cost": 2148000,
+      "count": 8
+    },
+    "underground": true,
+    "school": false,
+    "kindergarten": false,
+    "parking": true,
+    "dateSettlement": {
+      "quarter": 0,
+      "year": 2024
+    }
+  }, {
+    "id": 32,
+    "name": "Дом 32",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/897dcaa9-773a-11e5-8124-001ec9d8c6a2/img_51821_2953ce5780f26e6960efdb6004ca912a_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Плехановская д. 84",
+    "coords": [51.66068874449835, 39.17456449240003],
+    "oneRoom": {
+      "cost": 1025000,
+      "count": 8
+    },
+    "twoRoom": {
+      "cost": 1758000,
+      "count": 2
+    },
+    "threeRoom": {
+      "cost": 2346000,
+      "count": 0
+    },
+    "fourRoom": {
+      "cost": 3355000,
+      "count": 2
+    },
+    "studioRoom": {
+      "cost": 1656000,
+      "count": 1
+    },
+    "underground": true,
+    "school": false,
+    "kindergarten": true,
+    "parking": true,
+    "dateSettlement": {
+      "quarter": 3,
+      "year": 2025
+    }
+  }, {
+    "id": 33,
+    "name": "Дом 33",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/f316edf2-a041-11e6-8483-001ec9d8c6a2/dji_0006-copy.rev00_44729a8d4c39dafdad33c723a69e4e45_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Проспект Революции д. 6",
+    "coords": [51.61226297468356, 39.10957193345949],
+    "oneRoom": {
+      "cost": 1477000,
+      "count": 4
+    },
+    "twoRoom": {
+      "cost": 1662000,
+      "count": 6
+    },
+    "threeRoom": {
+      "cost": 2044000,
+      "count": 8
+    },
+    "fourRoom": {
+      "cost": 3409000,
+      "count": 3
+    },
+    "studioRoom": {
+      "cost": 2490000,
+      "count": 5
+    },
+    "underground": true,
+    "school": true,
+    "kindergarten": true,
+    "parking": false,
+    "dateSettlement": {
+      "quarter": 2,
       "year": 2019
     }
   }, {
-    "id": 2,
-    "visible": true,
-    "name": "дом 2",
+    "id": 34,
+    "name": "Дом 34",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/a6260ba6-a0de-11e6-8483-001ec9d8c6a2/img_4160_01045bf84b7f1324f86afe0ba2888d07_original_1x.jpg",
     "city": "Воронеж",
-    "adress": "Московский проспект,д 91",
-    "coords": [51.703246, 39.179851],
-    "apartaments": [{
-      "type": "Студия",
-      "count": 10,
-      "cost": 1000000,
-      "square": 40
-    }, {
-      "type": "Однокомнатные",
-      "count": 10,
-      "cost": 1500000,
-      "square": 45
-    }, {
-      "type": "Двухкомнатные",
-      "count": 8,
-      "cost": 2000000,
-      "square": 70
-    }, {
-      "type": "Трехкомнатные",
-      "count": 4,
-      "cost": 2500000,
-      "square": 100
-    }, {
-      "type": "Четырехкомнатные",
-      "count": 4,
-      "cost": 3000000,
-      "square": 130
-    }],
+    "address": "Улица Остужева д. 66",
+    "coords": [51.62329711515821, 39.17145460102728],
+    "oneRoom": {
+      "cost": 1048000,
+      "count": 7
+    },
+    "twoRoom": {
+      "cost": 1598000,
+      "count": 3
+    },
+    "threeRoom": {
+      "cost": 2059000,
+      "count": 9
+    },
+    "fourRoom": {
+      "cost": 3491000,
+      "count": 9
+    },
+    "studioRoom": {
+      "cost": 1618000,
+      "count": 1
+    },
+    "underground": true,
+    "school": false,
+    "kindergarten": true,
+    "parking": false,
+    "dateSettlement": {
+      "quarter": 0,
+      "year": 2019
+    }
+  }, {
+    "id": 35,
+    "name": "Дом 35",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/6509000/6509891e-a7f6-11e6-8483-001ec9d8c6a2/main-yu_kuch_666797da927ab518a42b17257228f312_eb7297db0d816a9aa4e6a94f9cb676de_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Карла Маркса д. 59",
+    "coords": [51.6660780154754, 39.139472988937655],
+    "oneRoom": {
+      "cost": 1059000,
+      "count": 4
+    },
+    "twoRoom": {
+      "cost": 1648000,
+      "count": 3
+    },
+    "threeRoom": {
+      "cost": 2079000,
+      "count": 5
+    },
+    "fourRoom": {
+      "cost": 3181000,
+      "count": 8
+    },
+    "studioRoom": {
+      "cost": 1057000,
+      "count": 4
+    },
+    "underground": false,
+    "school": false,
+    "kindergarten": true,
+    "parking": false,
+    "dateSettlement": {
+      "quarter": 4,
+      "year": 2021
+    }
+  }, {
+    "id": 36,
+    "name": "Дом 36",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/f04fd2bc-969a-11e6-8483-001ec9d8c6a2/ilinckye_52c74366a36d9a1915392c5232f107da_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Антонова-Овсиенко д. 13",
+    "coords": [51.6579688342508, 39.15244807080056],
+    "oneRoom": {
+      "cost": 1434000,
+      "count": 9
+    },
+    "twoRoom": {
+      "cost": 1760000,
+      "count": 1
+    },
+    "threeRoom": {
+      "cost": 2437000,
+      "count": 9
+    },
+    "fourRoom": {
+      "cost": 3233000,
+      "count": 1
+    },
+    "studioRoom": {
+      "cost": 2346000,
+      "count": 6
+    },
     "underground": true,
     "school": true,
+    "kindergarten": true,
+    "parking": true,
+    "dateSettlement": {
+      "quarter": 0,
+      "year": 2020
+    }
+  }, {
+    "id": 37,
+    "name": "Дом 37",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/0badc0dc-9c59-11e6-8483-001ec9d8c6a2/severnyii_654ddbfc279ef24792d89f562d3a9986_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Театральная д. 72",
+    "coords": [51.69657927381124, 39.16844168238328],
+    "oneRoom": {
+      "cost": 1386000,
+      "count": 8
+    },
+    "twoRoom": {
+      "cost": 1664000,
+      "count": 1
+    },
+    "threeRoom": {
+      "cost": 2365000,
+      "count": 3
+    },
+    "fourRoom": {
+      "cost": 3152000,
+      "count": 8
+    },
+    "studioRoom": {
+      "cost": 2213000,
+      "count": 1
+    },
+    "underground": true,
+    "school": false,
+    "kindergarten": true,
+    "parking": true,
+    "dateSettlement": {
+      "quarter": 3,
+      "year": 2024
+    }
+  }, {
+    "id": 38,
+    "name": "Дом 38",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/f04fd2bc-969a-11e6-8483-001ec9d8c6a2/ilinckye_52c74366a36d9a1915392c5232f107da_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Плехановская д. 84",
+    "coords": [51.6297977201164, 39.15970842429527],
+    "oneRoom": {
+      "cost": 1215000,
+      "count": 1
+    },
+    "twoRoom": {
+      "cost": 1723000,
+      "count": 2
+    },
+    "threeRoom": {
+      "cost": 2144000,
+      "count": 6
+    },
+    "fourRoom": {
+      "cost": 3253000,
+      "count": 3
+    },
+    "studioRoom": {
+      "cost": 1391000,
+      "count": 6
+    },
+    "underground": true,
+    "school": true,
+    "kindergarten": false,
+    "parking": false,
+    "dateSettlement": {
+      "quarter": 2,
+      "year": 2025
+    }
+  }, {
+    "id": 39,
+    "name": "Дом 39",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/6509000/6509891e-a7f6-11e6-8483-001ec9d8c6a2/main-yu_kuch_666797da927ab518a42b17257228f312_eb7297db0d816a9aa4e6a94f9cb676de_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Плехановская д. 75",
+    "coords": [51.683793085936124, 39.10730278479817],
+    "oneRoom": {
+      "cost": 1233000,
+      "count": 6
+    },
+    "twoRoom": {
+      "cost": 1639000,
+      "count": 3
+    },
+    "threeRoom": {
+      "cost": 2128000,
+      "count": 8
+    },
+    "fourRoom": {
+      "cost": 3250000,
+      "count": 1
+    },
+    "studioRoom": {
+      "cost": 1770000,
+      "count": 2
+    },
+    "underground": true,
+    "school": false,
+    "kindergarten": true,
+    "parking": false,
+    "dateSettlement": {
+      "quarter": 3,
+      "year": 2021
+    }
+  }, {
+    "id": 40,
+    "name": "Дом 40",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/5bbd38df-7412-11e5-8124-001ec9d8c6a2/img_9383_5bdbfedc967bdae2203e4cf2a5bd266b_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Остужева д. 100",
+    "coords": [51.61808795735902, 39.186147581679066],
+    "oneRoom": {
+      "cost": 1406000,
+      "count": 4
+    },
+    "twoRoom": {
+      "cost": 1520000,
+      "count": 9
+    },
+    "threeRoom": {
+      "cost": 2297000,
+      "count": 7
+    },
+    "fourRoom": {
+      "cost": 3464000,
+      "count": 9
+    },
+    "studioRoom": {
+      "cost": 2074000,
+      "count": 9
+    },
+    "underground": true,
+    "school": false,
+    "kindergarten": true,
+    "parking": true,
+    "dateSettlement": {
+      "quarter": 1,
+      "year": 2024
+    }
+  }, {
+    "id": 41,
+    "name": "Дом 41",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/0bff26fc-cf88-11e7-ac2a-001ec9d8c6a2/sheremetievskiy_12_aef54d3b482a4a79d349f387c27d37a7_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Карла Маркса д. 39",
+    "coords": [51.600611530859055, 39.18744888011789],
+    "oneRoom": {
+      "cost": 1341000,
+      "count": 7
+    },
+    "twoRoom": {
+      "cost": 1730000,
+      "count": 1
+    },
+    "threeRoom": {
+      "cost": 2186000,
+      "count": 2
+    },
+    "fourRoom": {
+      "cost": 3261000,
+      "count": 5
+    },
+    "studioRoom": {
+      "cost": 1477000,
+      "count": 9
+    },
+    "underground": false,
+    "school": true,
+    "kindergarten": false,
+    "parking": false,
+    "dateSettlement": {
+      "quarter": 3,
+      "year": 2020
+    }
+  }, {
+    "id": 42,
+    "name": "Дом 42",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/102c34f4-cbbf-5d7c-92ee-79b38c0c0fe0/dji_0061-9_c5bf78d98fc975db131eab9e3b54d91b_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Остужева д. 20",
+    "coords": [51.67400302236802, 39.17712045665571],
+    "oneRoom": {
+      "cost": 1257000,
+      "count": 1
+    },
+    "twoRoom": {
+      "cost": 1500000,
+      "count": 8
+    },
+    "threeRoom": {
+      "cost": 2016000,
+      "count": 0
+    },
+    "fourRoom": {
+      "cost": 3003000,
+      "count": 1
+    },
+    "studioRoom": {
+      "cost": 2192000,
+      "count": 0
+    },
+    "underground": false,
+    "school": false,
+    "kindergarten": true,
+    "parking": true,
+    "dateSettlement": {
+      "quarter": 2,
+      "year": 2024
+    }
+  }, {
+    "id": 43,
+    "name": "Дом 43",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/897dcaa9-773a-11e5-8124-001ec9d8c6a2/img_51821_2953ce5780f26e6960efdb6004ca912a_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Проспект Революции д. 73",
+    "coords": [51.63698953137662, 39.16815661135528],
+    "oneRoom": {
+      "cost": 1460000,
+      "count": 0
+    },
+    "twoRoom": {
+      "cost": 1908000,
+      "count": 2
+    },
+    "threeRoom": {
+      "cost": 2395000,
+      "count": 7
+    },
+    "fourRoom": {
+      "cost": 3008000,
+      "count": 5
+    },
+    "studioRoom": {
+      "cost": 1855000,
+      "count": 5
+    },
+    "underground": false,
+    "school": false,
     "kindergarten": false,
     "parking": true,
     "dateSettlement": {
@@ -80,127 +1540,214 @@
       "year": 2019
     }
   }, {
-    "id": 3,
-    "visible": true,
-    "name": "дом 3",
+    "id": 44,
+    "name": "Дом 44",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/897dcaa9-773a-11e5-8124-001ec9d8c6a2/img_51821_2953ce5780f26e6960efdb6004ca912a_original_1x.jpg",
     "city": "Воронеж",
-    "adress": "ул Антонова-Овсеенко,д 19",
-    "coords": [51.709517, 39.140301],
-    "apartaments": [{
-      "type": "Студия",
-      "count": 0,
-      "cost": 0,
-      "square": 0
-    }, {
-      "type": "Однокомнатные",
-      "count": 6,
-      "cost": 1200000,
-      "square": 55
-    }, {
-      "type": "Двухкомнатные",
-      "count": 8,
-      "cost": 1700000,
-      "square": 68
-    }, {
-      "type": "Трехкомнатные",
-      "count": 6,
-      "cost": 2200000,
-      "square": 99
-    }, {
-      "type": "Четырехкомнатные",
-      "count": 0,
-      "cost": 0,
-      "square": 0
-    }],
+    "address": "Улица Кольцовская д. 48",
+    "coords": [51.61972091313326, 39.18816758239327],
+    "oneRoom": {
+      "cost": 1185000,
+      "count": 4
+    },
+    "twoRoom": {
+      "cost": 1921000,
+      "count": 8
+    },
+    "threeRoom": {
+      "cost": 2154000,
+      "count": 2
+    },
+    "fourRoom": {
+      "cost": 3478000,
+      "count": 5
+    },
+    "studioRoom": {
+      "cost": 1528000,
+      "count": 9
+    },
     "underground": true,
     "school": true,
     "kindergarten": true,
     "parking": false,
     "dateSettlement": {
-      "quarter": 4,
-      "year": 2019
-    }
-  }, {
-    "id": 4,
-    "visible": true,
-    "name": "дом 4",
-    "city": "Воронеж",
-    "adress": "ул Новосибирская,д 61А",
-    "coords": [51.595587, 39.240578],
-    "apartaments": [{
-      "type": "Студия",
-      "count": 8,
-      "cost": 750000,
-      "square": 30
-    }, {
-      "type": "Однокомнатные",
-      "count": 8,
-      "cost": 900000,
-      "square": 35
-    }, {
-      "type": "Двухкомнатные",
-      "count": 6,
-      "cost": 1300000,
-      "square": 60
-    }, {
-      "type": "Трехкомнатные",
-      "count": 2,
-      "cost": 1800000,
-      "square": 85
-    }, {
-      "type": "Четырехкомнатные",
-      "count": 0,
-      "cost": 0,
-      "square": 0
-    }],
-    "underground": false,
-    "school": false,
-    "kindergarten": false,
-    "parking": true,
-    "dateSettlement": {
-      "quarter": 1,
+      "quarter": 3,
       "year": 2020
     }
   }, {
-    "id": 5,
-    "visible": true,
-    "name": "дом 5",
-    "city": "Липецк",
-    "adress": "ул Москаленко,д 1",
-    "coords": [52.587693, 39.513042],
-    "apartaments": [{
-      "type": "Студия",
-      "count": 0,
-      "cost": 0,
-      "square": 0
-    }, {
-      "type": "Однокомнатные",
-      "count": 12,
-      "cost": 1050000,
-      "square": 40
-    }, {
-      "type": "Двухкомнатные",
-      "count": 8,
-      "cost": 1550000,
-      "square": 65
-    }, {
-      "type": "Трехкомнатные",
-      "count": 4,
-      "cost": 2050000,
-      "square": 110
-    }, {
-      "type": "Четырехкомнатные",
-      "count": 2,
-      "cost": 2550000,
-      "square": 130
-    }],
+    "id": 45,
+    "name": "Дом 45",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/6509000/6509891e-a7f6-11e6-8483-001ec9d8c6a2/main-yu_kuch_666797da927ab518a42b17257228f312_eb7297db0d816a9aa4e6a94f9cb676de_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Проспект Революции д. 55",
+    "coords": [51.61892550234396, 39.157434033650986],
+    "oneRoom": {
+      "cost": 1239000,
+      "count": 3
+    },
+    "twoRoom": {
+      "cost": 1752000,
+      "count": 1
+    },
+    "threeRoom": {
+      "cost": 2500000,
+      "count": 9
+    },
+    "fourRoom": {
+      "cost": 3318000,
+      "count": 4
+    },
+    "studioRoom": {
+      "cost": 2414000,
+      "count": 3
+    },
     "underground": false,
+    "school": false,
+    "kindergarten": true,
+    "parking": true,
+    "dateSettlement": {
+      "quarter": 2,
+      "year": 2022
+    }
+  }, {
+    "id": 46,
+    "name": "Дом 46",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/6509000/6509891e-a7f6-11e6-8483-001ec9d8c6a2/main-yu_kuch_666797da927ab518a42b17257228f312_eb7297db0d816a9aa4e6a94f9cb676de_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Кольцовская д. 4",
+    "coords": [51.66024748400699, 39.16012805947304],
+    "oneRoom": {
+      "cost": 1176000,
+      "count": 7
+    },
+    "twoRoom": {
+      "cost": 1851000,
+      "count": 6
+    },
+    "threeRoom": {
+      "cost": 2229000,
+      "count": 3
+    },
+    "fourRoom": {
+      "cost": 3121000,
+      "count": 6
+    },
+    "studioRoom": {
+      "cost": 1395000,
+      "count": 5
+    },
+    "underground": false,
+    "school": true,
+    "kindergarten": false,
+    "parking": false,
+    "dateSettlement": {
+      "quarter": 2,
+      "year": 2020
+    }
+  }, {
+    "id": 47,
+    "name": "Дом 47",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/65098000/65098933-a7f6-11e6-8483-001ec9d8c6a2/main-zarechnaya_4cb94ffb3267884d7128c178c0f16c6c_f099a6c18bbbe1ed869fc2a642aaf9d9_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Кольцовская д. 95",
+    "coords": [51.6647311106797, 39.14194946029255],
+    "oneRoom": {
+      "cost": 1095000,
+      "count": 9
+    },
+    "twoRoom": {
+      "cost": 1525000,
+      "count": 7
+    },
+    "threeRoom": {
+      "cost": 2102000,
+      "count": 6
+    },
+    "fourRoom": {
+      "cost": 3102000,
+      "count": 1
+    },
+    "studioRoom": {
+      "cost": 2280000,
+      "count": 10
+    },
+    "underground": true,
     "school": true,
     "kindergarten": true,
     "parking": true,
     "dateSettlement": {
-      "quarter": 1,
+      "quarter": 0,
       "year": 2019
+    }
+  }, {
+    "id": 48,
+    "name": "Дом 48",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/c3c2b9db-987e-11e7-b49c-001ec9d8c6a2/181102_dmitrovskiy_park_1_85649d8821abf278b0c2890825fdb597_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Плехановская д. 14",
+    "coords": [51.63221271590705, 39.188256080911074],
+    "oneRoom": {
+      "cost": 1083000,
+      "count": 1
+    },
+    "twoRoom": {
+      "cost": 1913000,
+      "count": 1
+    },
+    "threeRoom": {
+      "cost": 2035000,
+      "count": 7
+    },
+    "fourRoom": {
+      "cost": 3392000,
+      "count": 2
+    },
+    "studioRoom": {
+      "cost": 2040000,
+      "count": 4
+    },
+    "underground": false,
+    "school": false,
+    "kindergarten": true,
+    "parking": false,
+    "dateSettlement": {
+      "quarter": 4,
+      "year": 2022
+    }
+  }, {
+    "id": 49,
+    "name": "Дом 49",
+    "img": "https://0.db-estate.cdn.pik-service.ru/attachment_pikru/0/c3c2b9db-987e-11e7-b49c-001ec9d8c6a2/181102_dmitrovskiy_park_1_85649d8821abf278b0c2890825fdb597_original_1x.jpg",
+    "city": "Воронеж",
+    "address": "Улица Кольцовская д. 41",
+    "coords": [51.6704064531892, 39.15161904383874],
+    "oneRoom": {
+      "cost": 1391000,
+      "count": 7
+    },
+    "twoRoom": {
+      "cost": 1746000,
+      "count": 0
+    },
+    "threeRoom": {
+      "cost": 2331000,
+      "count": 5
+    },
+    "fourRoom": {
+      "cost": 3185000,
+      "count": 1
+    },
+    "studioRoom": {
+      "cost": 2195000,
+      "count": 6
+    },
+    "underground": true,
+    "school": true,
+    "kindergarten": false,
+    "parking": true,
+    "dateSettlement": {
+      "quarter": 0,
+      "year": 2020
     }
   }]
 }
