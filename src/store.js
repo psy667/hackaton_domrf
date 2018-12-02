@@ -29,7 +29,7 @@ export default new Vuex.Store({
             state.map = false;
             state.filtered = state.markers;
             for (let key in state.filter) {
-                if (state.filter[key]) {
+                if (!!state.filter[key]) {
                     let context = state.filter[key];
                     window.console.log(state.filter);
                     state.filtered = state.filtered.filter(item => {
@@ -43,8 +43,9 @@ export default new Vuex.Store({
                                 break;
                             case "object":
                                 for (let index in item[key]){
-                                    window.console.log(context);
+                                    console.log(context[index]);
                                     if(context[index] === !!item[key][index].count){
+                                        window.console.log(context[index]);
                                         // window.console.log(item[key][index].count);
                                     }
                                 }

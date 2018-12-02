@@ -13,10 +13,6 @@
         <kindergarten></kindergarten>
         <parking></parking>
         <school></school>
-        <div class="divider"></div>
-        <square></square>
-
-
     </div>
 </template>
 
@@ -28,7 +24,6 @@
     import Kindergarten from './filters/Kindergarten'
     import Parking from './filters/Parking'
     import School from './filters/School'
-    import Square from './filters/Square'
     import Underground from './filters/Underground'
     
     import {mapState} from 'vuex'
@@ -60,7 +55,6 @@
             Kindergarten,
             Parking,
             School,
-            Square,
             Underground
         }
     }
