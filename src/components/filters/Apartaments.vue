@@ -27,23 +27,40 @@
 <script>
     export default {
         name: "Apartaments",
-        data(){
-            return{
-                oneRoom:false,
-                twoRoom:false,
-                threeRoom:false,
-                fourRoom:false,
-                studio:false
+        data() {
+            return {
+                oneRoom: false,
+                twoRoom: false,
+                threeRoom: false,
+                fourRoom: false,
+                studio: false
             }
         },
-        methods:{
-            changeApartaments(){
-                this.$store.commit("addFilter",{
-                    oneRoom:this.oneRoom,
-                    twoRoom:this.twoRoom,
-                    threeRoom:this.threeRoom,
-                    fourRoom:this.fourRoom,
-                    studio:this.studio
+        methods: {
+            changeApartaments() {
+                this.$store.commit("addFilter", {
+                    apartaments: [
+                        {
+                            type: "Студии",
+                            count: this.studio
+                        },
+                        {
+                            type: "Однокомнатные",
+                            count: this.oneRoom
+                        },
+                        {
+                            type: "Двухкомнатные",
+                            count: this.twoRoom
+                        },
+                        {
+                            type: "Трехкомнатные",
+                            count: this.threeRoom
+                        },
+                        {
+                            type: "Четырехкомнатные",
+                            count: this.fourRoom
+                        }
+                    ]
                 })
             }
         }

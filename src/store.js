@@ -8,82 +8,99 @@ export default new Vuex.Store({
         selected: false,
         map: true,
         markers: {},
-        filter:{
-            school:false,
-            underground: false,
-            city:""
-        },
+        filter: {},
         filtered: []
     },
     mutations: {
-        getData(state, data){
-          state.markers = data.obj;
+        getData(state, data) {
+            state.markers = data.obj;
 
         },
         selectOff(state) {
-            state.selected=false;
+            state.selected = false;
         },
         selectOn(state) {
-            state.selected=true;
+            state.selected = true;
         },
-        addFilter(state, option){
-            state.filter={...state.filter, ...option};
+        addFilter(state, option) {
+            state.filter = {...state.filter, ...option};
         },
-        filterOut(state){
-          state.map = false;
-          state.filtered = state.markers;
+        filterOut(state) {
+            state.map = false;
+            state.filtered = state.markers;
 
-          for (let key in state.filter) {
-            if (state.filter[key]) {
-              let context = state.filter[key];
-              state.filtered = state.filtered.filter(function(item) {
-                switch (typeof(item[key])) {
-                  case "string":
-                    return item[key] == context;
-                    break;
-                  case "boolean":
-                    return item[key];
-                    break;
-                  // case "number":
-                  //   return item[key];
-                  //   break;
-                  default:
-
+            for (let key in state.filter) {
+                if (state.filter[key]) {
+                    let context = state.filter[key];
+                    window.console.log(state.filter);
+                    state.filtered = state.filtered.filter(item => {
+                        // window.console.log(typeof context, context);
+                        switch (typeof (item[key])) {
+                            case "string":
+                                return item[key] == context;
+                                break;
+                            case "boolean":
+                                return item[key];
+                                break;
+                            // case "array":
+                            //     window.console.log("lol");
+                            //
+                            //     for(let i=0;i<item[key].length; i++){
+                            //         window.console.log("lol");
+                            //     }
+                            //     break;
+                            case "object":
+                                for (let index in item[key]) {
+                                    let flag=false;
+                                    if(typeof item[key][index]=="object"){
+                                        for(let iter in item[key][index]){
+                                            window.console.log(item[key][index][iter],context[index][iter]);
+                                            if(context[index][iter]){
+                                                if(typeof item[key][index][iter]=="number"){
+                                                    if(!!item[key][index][iter]===!!context[index][iter]){
+                                                            return true;
+                                                    }
+                                                }
+                                                if(typeof item[key][index][iter]=="string"){
+                                                    if(item[key][index][iter]===context[index][iter]){
+                                                        if(flag){
+                                                            return true;
+                                                        }
+                                                        flag=true;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    else{
+                                        if (context[index]) {
+                                            if(item[key][index] === context[index]){
+                                                return true;
+                                            }
+                                            return false;
+                                        }
+                                    }
+                                }
+                                return false;
+                            default:
+                                break;
+                        }
+                        return item[key];
+                    })
                 }
-                  return item[key];
-              })
             }
+            window.console.log(state.filtered);
             state.map = true;
-          }
         }
-        // changeBasic(state, option){
-        //     state.markers.filter(marker => (marker[option] === option) ? marker.visible=true : marker.visible=false);
-        // },
-        // changeParking(state, parking){
-        //     state.markers.filter(marker => (marker.parking === parking) ? marker.visible=true : marker.visible=false);
-        // },
-        // changeSchool(state, school){
-        //     state.markers.filter(marker => (marker.school === school) ? marker.visible=true : marker.visible=false);
-        // },
-        // changeKindergarten(state, kindergarten){
-        //     state.markers.filter(marker => (marker.kindergarten === kindergarten) ? marker.visible=true : marker.visible=false);
-        // },
-        // changeMetro(state, metro){
-        //     state.markers.filter(marker => (marker.metro === metro) ? marker.visible=true : marker.visible=false);
-        // }
     },
     actions: {
-      filterOut(context){
-        context.commit('filterOut');
-      },
-      getData(context){
-        let url = 'http://demo4779301.mockable.io/';
+        getData(context) {
+            let url = 'http://demo4779301.mockable.io/';
 
-        fetch(url).then(response => response.json()).then(data => {
-          console.log(data);
-          context.commit('getData', data);
-          context.commit('filterOut');
-        });
-      }
+            fetch(url).then(response => response.json()).then(data => {
+                context.commit('getData', data);
+                context.commit('filterOut');
+            });
+        }
     }
 })
